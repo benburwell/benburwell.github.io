@@ -1,3 +1,12 @@
-name: Your New Jekyll Site
+name: Ben Burwell
 markdown: redcarpet
 pygments: true
+keywords:
+    - ben burwell
+    - freelance
+    - designer
+    - developer
+description: "Computer science student, hacker. Passionate about kerning and coffee."
+# sass:
+#     style: :compressed
+permalink: /:category/:title/index.html
