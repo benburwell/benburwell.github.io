@@ -1,65 +1,13 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>Ben Burwell</title>
-        <script type="text/javascript" src="//use.typekit.net/xgd2xxh.js"></script>
-        <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
-        <style type="text/css">
-            * {
-                padding: 0;
-                margin: 0;
-            }
+---
+layout: default
+title: Your New Jekyll Site
+---
 
-            body {
-                font-family: 'myriad-pro';
-                font-size: 16px;
-                color: rgb(0, 0, 0);
-                background-color: rgb(250, 250, 250);
-                margin-left: auto;
-                margin-right: auto;
-                font-weight: normal;
-            }
-
-            .content {
-                width: 40em;
-                margin-left: auto;
-                margin-right: auto;
-                text-align: center;
-            }
-
-            .title-block {
-                border-bottom: 2px solid rgb(0, 0, 0);
-                margin-left: auto;
-                margin-right: auto;
-                padding: 1em 1em 0.5em 1em;
-                margin: 0 1em 1em 1em;
-            }
-
-            h1 {
-                font-size: 2em;
-                font-weight: bold;
-            }
-
-            a {
-                color: rgb(68, 126, 173);
-            }
-
-            .caption {
-                font-family: 'minion-pro';
-                font-style: italic;
-                padding: 0.5em;
-                font-size: 1.2em;
-            }
-
-        </style>
-    </head>
-    <body>
-        <div class="content">
-            <div class="title-block">
-                <h1>Ben Burwell</h1>
-                <p class="caption">Designer &amp; Developer</p>
-            </div>
-            <p>Please visit my website, <a href="http://www.benburwell.com/">www.benburwell.com</a>.</p>
-        </div>
-    </body>
-</html>
+<div id="home">
+  <h1>Blog Posts</h1>
+  <ul class="posts">
+    {% for post in site.posts %}
+      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+    {% endfor %}
+  </ul>
+</div>
