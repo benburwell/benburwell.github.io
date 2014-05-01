@@ -10,3 +10,5 @@ description: "Computer science student, hacker. Passionate about kerning and cof
 # sass:
 #     style: :compressed
 permalink: /:categories/:title/
+gems:
+    - jekyll-sitemap
