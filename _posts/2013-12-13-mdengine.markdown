@@ -1,0 +1,11 @@
+---
+layout: post
+title: MDEngine
+description: A drag-and-drop PHP script enabling simple serving of rendered Markdown files.
+date: 2013-12-13 00:00:00
+type: project
+---
+
+MDEngine was born of my need to serve static Markdown files simply and beautifully. I accomplished this by creating MDEngine, the PHP Markdown Engine.
+
+It’s extremely lightweight and takes the form of a small collection of files you can drop into any web directory served with Apache which will then serve all `.md` files as beautiful HTML. MDEngine is [available on GitHub](https://github.com/bburwell/mdengine).
