@@ -1,0 +1,10 @@
+---
+title: Well, this is embarassing.
+description: Page not found — that’s a 404 :(
+permalink: /404.html
+layout: master
+---
+
+Either I screwed up and linked you to a page that doesn’t exist (silly me!), or you went looking for something that I never made (silly me — I should have made it!).
+
+Sorry about that!
