@@ -12,7 +12,7 @@ Several of the team members had experience using GitHub, so we decided to [creat
 
 One of the first challenges we encountered that would have an impact on our architecture was the fact that most printers do not have public IP addresses and thus would need to be queried from inside the local network, while we wanted the public-facing site to be accessible regardless of physical location. This led us to developing the concept of an API which would enable a master database to be queried and updated by various components. In developing an API-central infrastructure, we were also looking down th line towards supporting client-developed applications and native applications for various platforms (iOS, Android, Windows, OS X).
 
-<p style="text-align:center">[![Forest Interaction Diagram](/assets/images/forest_interaction_diagram.png)](/images/forest_interaction_diagram.png)</p>
+<p style="text-align:center">[![Forest Interaction Diagram](/assets/images/forest_interaction_diagram.png)](/assets/images/forest_interaction_diagram.png)</p>
 
 Our first task was to develop a data format and database schema. As we intended to use [actionhero](http://actionherojs.com) for the API server, we created a [schema for MongoDB](https://github.com/printerSystemCSI210/api-server/blob/master/initializers/_project.js) and a base [set of API commands](https://github.com/printerSystemCSI210/api-server/tree/master/actions) we would need to implement in order to get a framework of the service up and running. We [deployed this on Heroku](https://forest-api.herokuapp.com).
 
