@@ -5,6 +5,10 @@ description: A small collection of writing I’ve done on various topics over th
 ---
 
 {% for post in site.posts %}
-    <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
-    <p>{{ post.description }}</p>
+    {% if post.type == "writing" %}
+        <div class="writing">
+            <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
+            <p>{{ post.description }}</p>
+        </div>
+    {% endif %}
 {% endfor %}
