@@ -24,22 +24,13 @@ For those unfamiliar with [GitHub Pages](https://pages.github.com), anything tha
 
 Next came what was probably the most time-consuming part of the whole process: converting the [Jade](http://jade-lang.com) layout into pure HTML with [Liquid](http://liquidmarkup.org) markup. Luckily, this wasn’t too painful, and I came out with [two layouts](https://github.com/benburwell/benburwell.github.io/tree/master/_layouts), page structure and navigation, and the other for displaying Posts.
 
-My next challenge was to maintain my link structure so nothing would be broken. The one exception I conceded to was my résumé, a PDF file that I had been serving from `/resume/` using Express (admittedly a pretty poor idea). After exploring the Jekyll documentation, I discovered that an easy way to separate out my content into Writing and Projects as I’ve done on my site was to use the built-in category functionality. I would simply create two category pages at [`/writing/index.html`](https://github.com/benburwell/benburwell.github.io/blob/master/writing/index.html) and [`/projects/index.html`](https://github.com/benburwell/benburwell.github.io/blob/master/projects/index.html) to render a list of posts from their respective categories, and tag each Markdown document with the appropriate category. The final step was to define my permalink structure in `_config.yml` which I did by adding the line
-
-    permalink: /:categories/:title/
-
-to the file.
+My next challenge was to maintain my link structure so nothing would be broken. The one exception I conceded to was my résumé, a PDF file that I had been serving from `/resume/` using Express (admittedly a pretty poor idea). After exploring the Jekyll documentation, I discovered that an easy way to separate out my content into Writing and Projects as I’ve done on my site was to use the built-in category functionality. I would simply create two category pages at [`/writing/index.html`](https://github.com/benburwell/benburwell.github.io/blob/master/writing/index.html) and [`/projects/index.html`](https://github.com/benburwell/benburwell.github.io/blob/master/projects/index.html) to render a list of posts from their respective categories, and tag each Markdown document with the appropriate category. The final step was to define my permalink structure in `_config.yml` which I did by adding `permalink: /:categories/:title/` to the file.
 
 I next had the pleasure of renaming all of my content files to adhere to Jekyll’s naming convention (`YYYY-MM-DD-hyphen-separated-title.markdown`) and adding/modifying the front matter as necessary.
 
 ## Additional Configuration
 
-I decided to enable the `jekyll-sitemap` plugin by adding
-
-    gems:
-        - jekyll-sitemap
-
-to `_config.yml`. This plugin will generate [an XML sitemap](http://www.sitemaps.org) that can be used by crawlers such as those run by search engines to help determine what content needs to be indexed.
+I decided to [enable the `jekyll-sitemap` plugin](https://help.github.com/articles/using-jekyll-plugins-with-github-pages) by adding `jekyll-sitemap` as a gem to `_config.yml`. This plugin will generate [an XML sitemap](http://www.sitemaps.org) that can be used by crawlers such as those run by search engines to help determine what content needs to be indexed.
 
 I moved my error page over and quickly translated the Jade to Markdown by [following the instructions provided by GitHub](https://help.github.com/articles/custom-404-pages) for creating a custom 404 page. The only remaining issue was my stylesheet problem. In my Express app, I used [Less](http://lesscss.org) for writing my stylesheets. As of this writing, Jekyll does not support compiled stylesheet languages like Less, though [there is the suggestion of future support](http://jekyllrb.com/docs/assets/) for Sass and CoffeeScript.
 
