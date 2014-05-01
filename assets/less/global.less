@@ -1,0 +1,53 @@
+@base03  :  #002b36;
+@base02  :  #073642;
+@base01  :  #586e75;
+@base00  :  #657b83;
+@base0   :  #839496;
+@base1   :  #93a1a1;
+@base2   :  #eee8d5;
+@base3   :  #fdf6e3;
+@yellow  :  #b58900;
+@orange  :  #cb4b16;
+@red     :  #dc322f;
+@magenta :  #d33682;
+@violet  :  #6c71c4;
+@blue    :  #268bd2;
+@cyan    :  #2aa198;
+@green   :  #859900;
+
+// Mixin to deal with cross-browser transitions
+.transition (@param, @time, @type) {
+    -webkit-transition: @param @time @type;
+    -moz-transition: @param @time @type;
+    -o-transition: @param @time @type;
+    -ms-transition: @param @time @type;
+    transition: @param @time @type;
+}
+
+.nav_button(@c) {
+    background-color: @c;
+    border-color: @c;
+    .transition(all, 0.25s, linear);
+    &:hover {
+        background-color: darken(@c, 15%);
+        border-color: darken(@c, 15%);
+    }
+}
+
+// Sprites
+.sprite-email{ background-position: 0 0; width: 64px; height: 64px; } 
+.sprite-email_grey{ background-position: 0 -114px; width: 64px; height: 64px; } 
+.sprite-facebook{ background-position: 0 -228px; width: 64px; height: 64px; } 
+.sprite-facebook_grey{ background-position: 0 -342px; width: 64px; height: 64px; } 
+.sprite-googleplus{ background-position: 0 -456px; width: 64px; height: 64px; } 
+.sprite-googleplus_grey{ background-position: 0 -570px; width: 64px; height: 64px; } 
+.sprite-pinterest{ background-position: 0 -684px; width: 64px; height: 64px; } 
+.sprite-pinterest_grey{ background-position: 0 -798px; width: 64px; height: 64px; } 
+.sprite-reddit{ background-position: 0 -912px; width: 64px; height: 64px; } 
+.sprite-reddit_grey{ background-position: 0 -1026px; width: 64px; height: 64px; } 
+.sprite-rss{ background-position: 0 -1140px; width: 64px; height: 64px; } 
+.sprite-rss_grey{ background-position: 0 -1254px; width: 64px; height: 64px; } 
+.sprite-stumbleupon{ background-position: 0 -1368px; width: 64px; height: 64px; } 
+.sprite-stumbleupon_grey{ background-position: 0 -1482px; width: 64px; height: 64px; } 
+.sprite-twitter{ background-position: 0 -1596px; width: 64px; height: 64px; } 
+.sprite-twitter_grey{ background-position: 0 -1710px; width: 64px; height: 64px; } 

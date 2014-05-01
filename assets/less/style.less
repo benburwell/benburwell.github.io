@@ -1,0 +1,142 @@
+@import "normalize";
+@import "global";
+@import "960_12_col";
+@import "960-responsive";
+@import "syntax";
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'minion-pro', serif;
+    font-size: 22px;
+    color: @base03;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'myriad-pro', sans-serif;
+    font-weight: 600;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+a {
+    color: @red;
+    text-decoration: none;
+    .transition(color, 0.25s, linear);
+
+    &:hover {
+        color: darken(@red, 15%);
+    }
+}
+
+footer {
+    font-family: 'myriad-pro', sans-serif;
+    text-align: center;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 600;
+    font-size: 0.8em;
+    color: @base1;
+}
+
+header {
+
+    font-family: 'myriad-pro', sans-serif;
+
+    a {
+        font-size: 1em;
+        font-weight: 600;
+        color: rgb(255, 255, 255);
+        display: block;
+        text-align: center;
+        padding-top: 0.5em;
+        padding-bottom: 0.5em;
+
+        &:hover {
+            color: rgb(255, 255, 255);
+        }
+    }
+
+    .projects {
+        .nav_button(@green);
+    }
+
+    .writing {
+        .nav_button(@orange);
+    }
+
+    .github {
+        .nav_button(@blue);
+    }
+
+    .resume {
+        .nav_button(@magenta);
+    }
+}
+
+.about {
+    text-align: center;
+}
+
+.portrait {
+    border-radius: 220px;
+    width: 220px;
+    height: 220px;
+    margin-top: 2em;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url('/assets/images/ben_circle.png');
+    background-repeat: no-repeat;
+}
+
+.project h1 a {
+    color: @green;
+    &:hover {
+        color: darken(@green, 15%);
+    }
+}
+
+.writing h1 a {
+    color: @orange;
+    &:hover {
+        color: darken(@orange, 15%);
+    }
+}
+
+.doc_detail {
+
+    .date {
+        color: @base1;
+        margin-bottom: 1em;
+    }
+
+    img {
+        max-width: 100%;
+    }
+
+    p {
+        line-height: 1.5em;
+        margin-bottom: 1.5em;
+    }
+
+    ul {
+        margin-left: 2em;
+        list-style-type: square;
+        margin-bottom: 1em;
+    }
+
+    code {
+        font-family: 'source-code-pro';
+        font-size: 0.7em;
+        color: @base01;
+        background-color: @base3;
+        border: 1px solid @base2;
+        border-radius: 2px;
+        padding: 0 3px;
+    }
+}
