@@ -2,7 +2,6 @@
 layout: post
 title: Theatrical Credits
 description: Mostly for my own reference, here’s a list of shows I’ve worked on.
-date: 2014-04-30 00:00:00
 category: projects
 ---
 
