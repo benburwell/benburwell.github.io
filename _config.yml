@@ -9,4 +9,4 @@ keywords:
 description: "Computer science student, hacker. Passionate about kerning and coffee."
 # sass:
 #     style: :compressed
-permalink: /:type/:title/
+permalink: /:categories/:title/

@@ -3,7 +3,7 @@ layout: post
 title: MDEngine
 description: A drag-and-drop PHP script enabling simple serving of rendered Markdown files.
 date: 2013-12-13 00:00:00
-type: project
+category: projects
 ---
 
 MDEngine was born of my need to serve static Markdown files simply and beautifully. I accomplished this by creating MDEngine, the PHP Markdown Engine.

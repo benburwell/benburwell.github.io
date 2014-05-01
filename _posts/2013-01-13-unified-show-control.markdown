@@ -3,7 +3,7 @@ layout: post
 title: Unified Show Control
 description: A paper on unifying all aspects of theatrical show control.
 date: 2013-01-13 00:00:00
-type: project
+category: projects
 ---
 
 For my freshman writing seminar at Muhlenberg, I wrote a paper on a system I devised for controlling many different theatrical cueing consoles from one master console using MIDI Show Control (MSC).  I called my system [Unified Show Control (pdf)](/assets/pdf/Unified_Show_Control.pdf).
