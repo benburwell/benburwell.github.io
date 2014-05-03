@@ -2,7 +2,7 @@
 layout: post
 title: Enhancing Printing at Muhlenberg
 description: Avoiding frustration and wasted paper by providing remote status reporting and logical DNS names.
-category: projects
+category: writing
 date: 2014-05-03 00:00:00
 ---
 
