@@ -12,7 +12,7 @@
 body {
     font-family: 'minion-pro', serif;
     font-size: 22px;
-    color: @base03;
+    color: @base02;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -41,7 +41,6 @@ footer {
     letter-spacing: 2px;
     font-weight: 600;
     font-size: 0.8em;
-    color: @base1;
 }
 
 header {
@@ -134,19 +133,11 @@ header {
         font-family: 'source-code-pro';
         font-size: 0.7em;
         color: @base01;
-        background-color: @base3;
-        border: 1px solid @base2;
-        border-radius: 2px;
-        padding: 0 3px;
     }
 }
 
 @media print {
-    header {
-        display: none;
-    }
-
-    footer {
+    header, footer {
         display: none;
     }
 }
