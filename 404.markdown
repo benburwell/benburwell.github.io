@@ -1,5 +1,5 @@
 ---
-title: Well, this is embarassing.
+title: Well, this is embarrassing.
 description: Page not found — that’s a 404 :(
 permalink: /404.html
 layout: post
