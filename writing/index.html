@@ -5,8 +5,8 @@ description: A small collection of writing I’ve done on various topics over th
 ---
 
 {% for post in site.categories.writing %}
-    <div class="writing">
+    <section class="writing">
         <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
         <p>{{ post.description }}</p>
-    </div>
+    </section>
 {% endfor %}
