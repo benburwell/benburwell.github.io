@@ -4,6 +4,7 @@ title: ViewTime, A Safari Extension for YouTube
 description: ViewTime adds the amount of time a YouTube video has been played under its view count.
 date: 2014-06-08 00:00:00
 category: projects
+image: http://www.benburwell.com/assets/images/viewtime-icon.png
 ---
 
 It’s rather astonishing to consider the amount of time for which some viral  videos have been watched. For example, [Ylvis’ “The Fox”](https://www.youtube.com/watch?v=jofNR_WkoCE) has been watched for nearly 3000 years.
