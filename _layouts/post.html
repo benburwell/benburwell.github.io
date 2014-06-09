@@ -6,9 +6,24 @@ layout: master
 
     <h1>{{ page.title }}</h1>
 
-    {% if page.date %}
-    <div class="date">{{ page.date | date: "%-d %B %Y" }}</div>
-    {% endif %}
+    <div class="social-buttons">
+
+        <!-- Twitter -->
+        <a href="https://twitter.com/share" class="twitter-share-button" data-via="bburwell" data-count="none" data-dnt="true">Tweet</a>
+        <script>
+            !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
+        </script>
+
+        <!-- Facebook -->
+        <div class="fb-share-button" data-type="button"></div>
+
+        <!-- Flattr -->
+        <script id='fbyvjgw'>
+            (function(i){var f,s=document.getElementById(i);f=document.createElement('iframe');f.src='//api.flattr.com/button/view/?uid=benburwell&button=compact&url='+encodeURIComponent(document.URL);f.title='Flattr';f.height=20;f.width=110;f.style.borderWidth=0;s.parentNode.insertBefore(f,s);})('fbyvjgw');
+        </script>
+    </div>
+    
+    <div class="date">{{ page.date | date: "%A, %-d %B, %Y" }}</div>
 
     {{ content }}
 
