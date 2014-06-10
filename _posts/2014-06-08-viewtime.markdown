@@ -16,7 +16,7 @@ ViewTime is a plugin for Safari and Google Chrome that adds the duration the vid
 Installation
 ------------
 
-Download latest version for [Safari](http://updates.benburwell.com/safari/viewtime/latest.safariextz) or [Google Chrome](http://updates.benburwell.com/chrome/viewtime/latest.crx)and double-click to install in your browser.
+Download latest version for [Safari](http://updates.benburwell.com/safari/viewtime/latest.safariextz) or [Google Chrome](http://updates.benburwell.com/chrome/viewtime/latest.crx) and double-click to install in your browser.
 
 Contributing
 ------------
