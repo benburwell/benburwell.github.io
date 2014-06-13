@@ -62,6 +62,11 @@
         {% endif %}
         <meta name="twitter:domain" content="BenBurwell.com">
 
+        {% if page.chrome-webstore-item %}
+        <!-- Chrome Extension -->
+        <link rel="chrome-webstore-item" href="https://chrome.google.com/webstore/detail/{{ page.chrome-webstore-item }}">
+        {% endif %}
+
         <!-- TypeKit -->
         <script type="text/javascript">
             (function() {
