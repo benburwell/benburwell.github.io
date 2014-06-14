@@ -9,18 +9,17 @@ layout: master
     <div class="social-buttons">
 
         <!-- Twitter -->
-        <a href="https://twitter.com/share" class="twitter-share-button" data-via="bburwell" data-count="none" data-dnt="true">Tweet</a>
-        <script>
-            !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
-        </script>
+        <a href="https://twitter.com/intent/tweet?url=http%3A%2F%2Fwww.benburwell.com{{ page.url | cgi_escape }}&amp;text={{ page.title }}" onclick="javascript:window.open(this.href,
+  '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;"><img src="/assets/images/icons/social/twitter.png" alt="Tweet"></a>
 
         <!-- Facebook -->
-        <div class="fb-share-button" data-type="button"></div>
+        <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwww.benburwell.com{{ page.url | cgi_escape }}" onclick="javascript:window.open(this.href,
+  '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;"><img src="/assets/images/icons/social/facebook.png" alt="Share on Facebook"></a>
 
-        <!-- Flattr -->
-        <script id='fbyvjgw'>
-            (function(i){var f,s=document.getElementById(i);f=document.createElement('iframe');f.src='//api.flattr.com/button/view/?uid=benburwell&button=compact&url='+encodeURIComponent(document.URL);f.title='Flattr';f.height=20;f.width=110;f.style.borderWidth=0;s.parentNode.insertBefore(f,s);})('fbyvjgw');
-        </script>
+        <!-- Google Plus -->
+        <a href="https://plus.google.com/share?url=http%3A%2F%2Fwww.benburwell.com{{ page.url | cgi_escape }}" onclick="javascript:window.open(this.href,
+  '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;"><img src="/assets/images/icons/social/gplus.png" alt="Share on Google+"></a>
+
     </div>
 
     <div class="date">{{ page.date | date: "%A, %-d %B %Y" }}</div>
