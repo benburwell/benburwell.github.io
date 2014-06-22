@@ -3,6 +3,11 @@
     <head>
         <title>{{ page.title }}</title>
 
+        <script type="text/javascript">
+            var h = document.getElementsByTagName('html')[0];
+            h.className += ' wf-loading';
+        </script>
+
         <!-- Encoding -->
         <meta charset="UTF-8">
 
@@ -71,8 +76,15 @@
         <script type="text/javascript">
             (function() {
                 var config = {
-                    kitId: 'xgd2xxh'
+                    kitId: 'xgd2xxh',
+                    scriptTimeout: 3000
                 };
+
+                var t = setTimeout(function() {
+                    h.className = h.className.replace(/(\s|^)wf-loading(\s|$)/g, ' ');
+                    h.className += ' wf-inactive';
+                }, config.scriptTimeout);
+
                 var d = false;
                 var tk = document.createElement('script');
                 tk.src = '//use.typekit.net/' + config.kitId + '.js';
@@ -82,6 +94,7 @@
                     var rs = this.readyState;
                     if (d || rs && rs != 'complete' && rs != 'loaded') return;
                     d = true;
+                    clearTimeout(t);
                     try { Typekit.load(config); } catch (e) {}
                 };
                 var s = document.getElementsByTagName('script')[0];
