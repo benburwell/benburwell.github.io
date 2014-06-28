@@ -62,19 +62,19 @@ header {
     }
 
     .projects {
-        .nav_button(@green);
-    }
-
-    .writing {
-        .nav_button(@orange);
-    }
-
-    .github {
         .nav_button(@blue);
     }
 
-    .resume {
+    .writing {
         .nav_button(@magenta);
+    }
+
+    .github {
+        .nav_button(@green);
+    }
+
+    .resume {
+        .nav_button(@orange);
     }
 }
 
@@ -100,16 +100,16 @@ pre {
 }
 
 .project h1 a {
-    color: @green;
+    color: @blue;
     &:hover {
-        color: darken(@green, 15%);
+        color: darken(@blue, 15%);
     }
 }
 
 .writing h1 a {
-    color: @orange;
+    color: @magenta;
     &:hover {
-        color: darken(@orange, 15%);
+        color: darken(@magenta, 15%);
     }
 }
 
