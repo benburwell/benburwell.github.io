@@ -135,7 +135,9 @@
                 var es = document.getElementsByTagName('a');
                 for (var i = 0; i < es.length; i++) {
                     es[i].addEventListener('touchstart', function() {
-                        window.location.href = this.href;
+                        if (this.href !== window.location.href) {
+                            window.location.href = this.href;                            
+                        }
                     });
                 }
             }
