@@ -130,6 +130,17 @@
             </footer>
         </div>
 
+        <script type="text/javascript">
+            if (window.Touch) {
+                var es = document.getElementsByTagName('a');
+                for (var i = 0; i < es.length; i++) {
+                    es[i].addEventListener('touchstart', function() {
+                        window.location.href = this.href;
+                    });
+                }
+            }
+        </script>
+
         <!-- Analytics -->
         <script type="text/javascript">
             var clicky_site_ids = clicky_site_ids || [];
