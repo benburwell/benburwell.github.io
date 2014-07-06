@@ -34,20 +34,29 @@
     }
 }
 
-// Sprites
-.sprite-email{ background-position: 0 0; width: 64px; height: 64px; } 
-.sprite-email_grey{ background-position: 0 -114px; width: 64px; height: 64px; } 
-.sprite-facebook{ background-position: 0 -228px; width: 64px; height: 64px; } 
-.sprite-facebook_grey{ background-position: 0 -342px; width: 64px; height: 64px; } 
-.sprite-googleplus{ background-position: 0 -456px; width: 64px; height: 64px; } 
-.sprite-googleplus_grey{ background-position: 0 -570px; width: 64px; height: 64px; } 
-.sprite-pinterest{ background-position: 0 -684px; width: 64px; height: 64px; } 
-.sprite-pinterest_grey{ background-position: 0 -798px; width: 64px; height: 64px; } 
-.sprite-reddit{ background-position: 0 -912px; width: 64px; height: 64px; } 
-.sprite-reddit_grey{ background-position: 0 -1026px; width: 64px; height: 64px; } 
-.sprite-rss{ background-position: 0 -1140px; width: 64px; height: 64px; } 
-.sprite-rss_grey{ background-position: 0 -1254px; width: 64px; height: 64px; } 
-.sprite-stumbleupon{ background-position: 0 -1368px; width: 64px; height: 64px; } 
-.sprite-stumbleupon_grey{ background-position: 0 -1482px; width: 64px; height: 64px; } 
-.sprite-twitter{ background-position: 0 -1596px; width: 64px; height: 64px; } 
-.sprite-twitter_grey{ background-position: 0 -1710px; width: 64px; height: 64px; } 
+@font-face {
+    font-family: 'icomoon';
+    src:url('/assets/fonts/icomoon.eot?-ei3c8u');
+    src:url('/assets/fonts/icomoon.eot?#iefix-ei3c8u') format('embedded-opentype'),
+        url('/assets/fonts/icomoon.woff?-ei3c8u') format('woff'),
+        url('/assets/fonts/icomoon.ttf?-ei3c8u') format('truetype'),
+        url('/assets/fonts/icomoon.svg?-ei3c8u#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    font-family: 'icomoon';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    font-size: 32px;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}

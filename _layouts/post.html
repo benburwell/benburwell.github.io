@@ -9,17 +9,22 @@ layout: master
     <div class="social-buttons">
 
         <!-- Twitter -->
-        <a href="https://twitter.com/intent/tweet?url=http%3A%2F%2Fwww.benburwell.com{{ page.url | cgi_escape }}&amp;text={{ page.title }}" onclick="javascript:window.open(this.href,
-  '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;"><img src="/assets/images/icons/social/twitter.png" alt="Tweet"></a>
+        <a href="https://twitter.com/intent/tweet?url=http%3A%2F%2Fwww.benburwell.com{{ page.url | cgi_escape }}&amp;text={{ page.title }}" onclick="window.open(this.href,
+  '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;"><span class="icon-twitter">&#xe603;</span></a>
 
         <!-- Facebook -->
-        <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwww.benburwell.com{{ page.url | cgi_escape }}" onclick="javascript:window.open(this.href,
-  '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;"><img src="/assets/images/icons/social/facebook.png" alt="Share on Facebook"></a>
+        <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwww.benburwell.com{{ page.url | cgi_escape }}" onclick="window.open(this.href,
+  '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;"><span class="icon-facebook">&#xe602;</span></a>
 
         <!-- Google Plus -->
-        <a href="https://plus.google.com/share?url=http%3A%2F%2Fwww.benburwell.com{{ page.url | cgi_escape }}" onclick="javascript:window.open(this.href,
-  '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;"><img src="/assets/images/icons/social/gplus.png" alt="Share on Google+"></a>
+        <a href="https://plus.google.com/share?url=http%3A%2F%2Fwww.benburwell.com{{ page.url | cgi_escape }}" onclick="window.open(this.href,
+  '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;"><span class="icon-googleplus">&#xe601;</span></a>
 
+        <!-- Tumblr -->
+        <a href="https://tumblr.com/share/" onclick="window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;"><span class="icon-tumblr">&#xe604;</span></a>
+
+        <!-- Pinterest -->
+        <a href="https://www.pinterest.com/pin/create/link/?url=http%3A%2F%2Fwww.benburwell.com{{ page.url | cgi_escape }}" onclick="window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;"><span class="icon-pinterest">&#xe605;</span></a>
     </div>
 
     <div class="date">{{ page.date | date: "%A, %-d %B %Y" }}</div>
