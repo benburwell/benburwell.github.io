@@ -7,14 +7,14 @@ category: writing
 image: https://www.benburwell.com/assets/images/universal-ssl.png
 ---
 
-On September 29, 2014, [CloudFlare](https://www.cloudflare.com/), a web security company and CDN provider, [announced](http://blog.cloudflare.com/introducing-universal-ssl/) that they would begin offering free, automatic SSL to all its customers (including those on their free plan). This is an enormous step forward for enhancing security and privacy on the Internet; while website owners would previously need to purchase an SSL certificate for their site and often pay extra for SSL hosting. Now, CloudFlare makes this all free (plus you get the benefits of their other services such as DDoS protection).
+On September 29, 2014, [CloudFlare](https://www.cloudflare.com/), a web security company and CDN provider, [announced](http://blog.cloudflare.com/introducing-universal-ssl/) that they would begin offering free, automatic SSL to all its customers (including those on their free plan). This is an enormous step forward for enhancing security and privacy on the Internet; while website owners would previously need to purchase an SSL certificate for their site and often pay extra for SSL hosting, CloudFlare now makes this all free. Plus, you get the benefits of their other services such as DDoS protection.
 
 I’ve previously written about [hosting static sites with GitHub Pages](https://www.benburwell.com/writing/migrating-to-github-pages-and-jekyll/), which is what I use for www.benburwell.com. GitHub provides SSL hosting for its static sites, but not with custom domain names (e.g. `https://example.github.io` but `http://example.com`). Using CloudFlare, it’s possible to use `https://example.com` for free. And as a bonus, you won’t need to worry about DNS hosting either.
 
 What is CloudFlare?
 -------------------
 
-CloudFlare works by having all of the traffic for your site routed through CloudFlare’s network, which provides CDN services such as caching of static resources, as well as security options like DDoS protection. You’ll need to import your DNS records to CloudFlare and specify CloudFlare’s DNS servers with your domain registrar to facilitate the service. Other nice features include apex `CNAME` records using the `@` character ([traditionally challenging](http://stackoverflow.com/a/16041655)), as well as IPv6 DNS support.
+CloudFlare works by having all of the traffic for your site routed through CloudFlare’s network, which provides CDN services such as caching of static resources, as well as security options like DDoS protection and a Web Application Firewall (WAF). You’ll need to import your DNS records to CloudFlare and specify CloudFlare’s DNS servers with your domain registrar to facilitate the service. Other nice features include apex `CNAME` records using the `@` character ([traditionally challenging](http://stackoverflow.com/a/16041655)), as well as IPv6 DNS support.
 
 
 Setting Up Free, Universal SSL with GitHub Pages
