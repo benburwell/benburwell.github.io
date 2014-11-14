@@ -30,12 +30,16 @@ a {
 footer {
     font-family: $sans;
     text-align: center;
-    padding-top: 2em;
+    padding-top: 1em;
     padding-bottom: 2em;
     text-transform: uppercase;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     font-weight: 600;
     font-size: 0.8em;
+
+    p {
+        margin: 1em;
+    }
 }
 
 header {
@@ -43,7 +47,7 @@ header {
     font-family: $sans;
 
     a {
-        font-size: 1em;
+        // font-size: 1em;
         font-weight: 600;
         color: rgb(255, 255, 255);
         display: block;
@@ -81,7 +85,6 @@ header {
 }
 
 .portrait {
-    border-radius: 220px;
     width: 220px;
     height: 220px;
     margin-top: 2em;
@@ -121,14 +124,14 @@ pre {
 
 
 
-.project h1 a {
+.projects a {
     color: $blue;
     &:hover {
         color: darken($blue, 15%);
     }
 }
 
-.writing h1 a {
+.writing a {
     color: $magenta;
     &:hover {
         color: darken($magenta, 15%);
@@ -165,35 +168,31 @@ pre {
 
 .social-buttons {
     float: right;
-
-    img {
-        height: 1em;
-    }
 }
 
 // &#xe601;
 .icon-googleplus {
-        color: #DD4B39;
+    color: $googleplus-color;
 }
 
 // &#xe602;
 .icon-facebook {
-        color: #3b5998;
+    color: $facebook-color;
 }
 
 // &#xe603;
 .icon-twitter {
-        color: #55ACEE;
+    color: $twitter-color;
 }
 
 // &#xe604;
 .icon-tumblr {
-        color: rgb(44, 71, 98);
+    color: $tumblr-color;
 }
 
 // &#xe605;
 .icon-pinterest {
-        color: #CB2027;
+    color: $pinterest-color;
 }
 
 @media print {
