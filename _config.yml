@@ -1,14 +1,13 @@
 name: Ben Burwell
 markdown: redcarpet
-pygments: true
+highlighter: pygments
 keywords:
     - ben burwell
     - freelance
     - designer
     - developer
 description: "Computer science student, hacker. Passionate about kerning and coffee."
-# sass:
-#     style: :compressed
+sass:
+    style: :compressed
+    sass_dir: _sass
 permalink: /:categories/:title/
-gems:
-    - jekyll-sitemap

@@ -1,44 +1,34 @@
+@import "fonts";
 @import "normalize";
 @import "global";
-@import "960_12_col";
 @import "960-responsive";
 @import "syntax";
 
-* {
-    padding: 0;
-    margin: 0;
-}
-
 body {
-    font-family: 'minion-pro', serif;
-    font-size: 22px;
-    color: @base02;
+    font-family: $serif;
+    font-size: 20px;
+    color: $base02;
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'myriad-pro', sans-serif;
+    font-family: $sans;
     font-weight: 600;
     margin-top: 0.5em;
     margin-bottom: 0.5em;
 }
 
 a {
-    color: @red;
+    color: $red;
     text-decoration: none;
-    .transition(color, 0.25s, linear);
+    @include transition(color, 0.25s, linear);
 
     &:hover {
-        color: darken(@red, 15%);
+        color: darken($red, 15%);
     }
 }
 
-p {
-    line-height: 1.5em;
-    margin-bottom: 1.5em;
-}
-
 footer {
-    font-family: 'myriad-pro', sans-serif;
+    font-family: $sans;
     text-align: center;
     padding-top: 2em;
     padding-bottom: 2em;
@@ -50,7 +40,7 @@ footer {
 
 header {
 
-    font-family: 'myriad-pro', sans-serif;
+    font-family: $sans;
 
     a {
         font-size: 1em;
@@ -67,26 +57,20 @@ header {
     }
 
     .projects {
-        .nav_button(@blue);
+        @include nav_button($blue);
     }
 
     .writing {
-        .nav_button(@magenta);
+        @include nav_button($magenta);
     }
 
     .github {
-        .nav_button(@green);
+        @include nav_button($green);
     }
 
     .resume {
-        .nav_button(@orange);
+        @include nav_button($orange);
     }
-}
-
-pre {
-    margin-bottom: 1.5em;
-    border-left: 3px solid @base1;
-    padding-left: 1em;
 }
 
 .about {
@@ -107,17 +91,47 @@ pre {
     background-repeat: no-repeat;
 }
 
+[class^="icon-"],
+[class*=" icon-"] {
+    font-family: 'icomoon';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    font-size: 32px;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+p {
+    line-height: 1.7em;
+    margin-bottom: 1.7em;
+}
+
+pre {
+    margin-bottom: 1.5em;
+    border-left: 3px solid $base1;
+    padding-left: 1em;
+}
+
+
+
 .project h1 a {
-    color: @blue;
+    color: $blue;
     &:hover {
-        color: darken(@blue, 15%);
+        color: darken($blue, 15%);
     }
 }
 
 .writing h1 a {
-    color: @magenta;
+    color: $magenta;
     &:hover {
-        color: darken(@magenta, 15%);
+        color: darken($magenta, 15%);
     }
 }
 
@@ -125,7 +139,7 @@ pre {
 
     .date {
         margin-bottom: 1em;
-        font-family: 'myriad-pro', sans-serif;
+        font-family: $sans;
         font-weight: 600;
     }
 
@@ -143,9 +157,9 @@ pre {
     }
 
     code {
-        font-family: 'source-code-pro';
+        font-family: $monospace;
         font-size: 0.7em;
-        color: @base01;
+        color: $base01;
     }
 }
 
@@ -180,10 +194,6 @@ pre {
 // &#xe605;
 .icon-pinterest {
         color: #CB2027;
-}
-
-.wf-loading {
-    visibility: hidden;
 }
 
 @media print {

@@ -3,19 +3,17 @@
     <head>
         <title>{{ page.title }}</title>
 
-        <script type="text/javascript">
-            var h = document.getElementsByTagName('html')[0];
-            h.className += ' wf-loading';
-        </script>
-
-        <!-- Encoding -->
         <meta charset="UTF-8">
 
-        <!-- Stylesheets -->
-        <link rel="stylesheet" href="/assets/css/style.css">
+        <style type="text/css">
+            {% capture inline %}
+                {% include inline.scss %}
+            {% endcapture %}
+            {{ inline | scssify }}
+        </style>
+
         <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
 
-        <!-- Icons -->
         <link rel="shortcut icon" href="/assets/images/icons/favicon.ico" sizes="128x128">
         <link rel="apple-touch-icon" href="/assets/images/icons/apple/apple-touch-icon-57x57.png" sizes="57x57">
         <link rel="apple-touch-icon" href="/assets/images/icons/apple/apple-touch-icon-72x72.png" sizes="72x72">
@@ -25,7 +23,6 @@
         <link rel="apple-touch-icon" href="/assets/images/icons/apple/apple-touch-icon-144x144.png" sizes="144x144">
         <link rel="apple-touch-icon" href="/assets/images/icons/apple/apple-touch-icon-152x152.png" sizes="152x152">
 
-        <!-- Generic Meta -->
         <meta name="author" content="Ben Burwell">
         {% if page.description %}
         <meta name="description" content="{{ page.description }}">
@@ -34,7 +31,6 @@
         {% endif %}
         <meta name="keywords" content="{{ site.keywords | join: ',' }}">
 
-        <!-- OpenGraph Meta -->
         <meta property="og:title" content="{{ page.title }}">
         <meta property="og:site_name" content="Ben Burwell">
         {% if page.description %}
@@ -52,7 +48,6 @@
         <meta property="article:author" content="Ben Burwell">
         <meta property="fb:admins" content="1439777397">
 
-        <!-- Twitter Meta -->
         <meta name="twitter:card" content="summary">
         <meta name="twitter:site" content="@bburwell">
         <meta name="twitter:title" content="{{ page.title }}">
@@ -70,63 +65,32 @@
         <meta name="twitter:domain" content="BenBurwell.com">
 
         {% if page.chrome-webstore-item %}
-        <!-- Chrome Extension -->
         <link rel="chrome-webstore-item" href="https://chrome.google.com/webstore/detail/{{ page.chrome-webstore-item }}">
         {% endif %}
-
-        <!-- TypeKit -->
-        <script type="text/javascript">
-            (function() {
-                var config = {
-                    kitId: 'xgd2xxh',
-                    scriptTimeout: 1000
-                };
-
-                var t = setTimeout(function() {
-                    h.className = h.className.replace(/(\s|^)wf-loading(\s|$)/g, ' ');
-                    h.className += ' wf-inactive';
-                }, config.scriptTimeout);
-
-                var d = false;
-                var tk = document.createElement('script');
-                tk.src = '//use.typekit.net/' + config.kitId + '.js';
-                tk.type = 'text/javascript';
-                tk.async = 'true';
-                tk.onload = tk.onreadystatechange = function() {
-                    var rs = this.readyState;
-                    if (d || rs && rs != 'complete' && rs != 'loaded') return;
-                    d = true;
-                    clearTimeout(t);
-                    try { Typekit.load(config); } catch (e) {}
-                };
-                var s = document.getElementsByTagName('script')[0];
-                s.parentNode.insertBefore(tk, s);
-            })();
-        </script>
     </head>
     <body>
-        <div class="container_12">
+        <div class="container">
             <header class="top_nav_bar">
-                <div class="grid_3">
+                <div class="grid_blob">
                     <a class="projects" href="/projects/">Projects</a>
                 </div>
-                <div class="grid_3">
+                <div class="grid_blob">
                     <a class="writing" href="/writing/">Writing</a>
                 </div>
-                <div class="grid_3">
+                <div class="grid_blob">
                     <a class="github" href="https://github.com/benburwell" target="_blank">GitHub</a>
                 </div>
-                <div class="grid_3">
+                <div class="grid_blob">
                     <a class="resume" href="/assets/pdf/Ben_Burwell_Resume.pdf">Résumé</a>
                 </div>
             </header>
-            <main class="grid_12">
+            <main class="grid_wide">
                 {{ content }}
             </main>
-            <footer class="grid_12">
+            <footer class="grid_wide">
                 <p>
                     <a href="/">Ben</a> / <a href="mailto:hi@benburwell.com">Email</a> / <a href="/pgp/">PGP</a><br>
-                    <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img src="/assets/images/icons/cc-by.png" alt="Creative Commons Attribution License" title="Creative Commons Licensed"></a>
+                    <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img width="80" height="15" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAAAPCAIAAAD8q9/YAAAABGdBTUEAANbY1E9YMgAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAISSURBVHjaYmAYYYARiP///z9SfMvIyAJhrdm0Glliz669M6fO7OjoKC8vx9Tm6up66tSptu5WcQlxIFdeVsHVyfXjh4+D3LeQeGXClHj54uXyxctx+RYIdu/ebWZmNrl/CoT74eOHwoLCoRLJWDy8fMkKYWFhXL6FAGBw3Lxxc8PajUD2x08fPHw8vH28h6qHL128lJ6eDmScPXtWWVkZmO6Bafj9+/dAEsgGigDFjY2NXVxcrl29BjWFiQnIRUs/EICcnDDZA+/hSxcvf/70GegfIDssLAzIALoPSHZ2dgL9+e7dO2DM37t3DygLFLxz+w48VQMTOWYJAQQQ78EZQBLIHkQe/vrlC5AUFBQERinQYxCfAxMwkK2kpAQUT0tLCw0NhRXxUKf//PmDkYURs5BA9h7EzwPrWywe5ubhAZJA3wL9BvQhMFYhxTKQC/QzULyiomLWrFloiZOdneP/n/94Ynjw5mE9fV1eXl6IP4ERu2fPHqCjgT4HsoGxLSQkBBSBZNczZ84oKitCdAnwCwArKvwxPLgaHsj1cF9X//Onz+/fv49HGzBETExMouOiA4L9gVxZabnmhuatW7YO8noYGPpYSunouKi3b98AoxSP5rKyMhVVZYhv+fkEdmzZMch9i69aArafUjNTKysr29vbsepxcna6fv16QUkBPD33T+gfbUsP0rb0SOssMQAEGAB0zfzj5yHE/QAAAABJRU5ErkJggg==" alt="Creative Commons Attribution License" title="Creative Commons Licensed"></a>
                 </p>
             </footer>
         </div>

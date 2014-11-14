@@ -1,0 +1,39 @@
+$base03: #002b36;
+$base02: #073642;
+$base01: #586e75;
+$base00: #657b83;
+$base0: #839496;
+$base1: #93a1a1;
+$base2: #eee8d5;
+$base3: #fdf6e3;
+$yellow: #b58900;
+$orange: #cb4b16;
+$red: #dc322f;
+$magenta: #d33682;
+$violet: #6c71c4;
+$blue: #268bd2;
+$cyan: #2aa198;
+$green: #859900;
+
+$sans: 'open_sans', sans-serif;
+$serif: 'crimson_text', serif;
+$monospace: 'source_code_pro', monospace;
+
+// Mixin to deal with cross-browser transitions
+@mixin transition ($param, $time, $type) {
+    -webkit-transition: $param $time $type;
+    -moz-transition: $param $time $type;
+    -o-transition: $param $time $type;
+    -ms-transition: $param $time $type;
+    transition: $param $time $type;
+}
+
+@mixin nav_button($c) {
+    background-color: $c;
+    border-color: $c;
+    @include transition(all, 0.25s, linear);
+    &:hover {
+        background-color: darken($c, 15%);
+        border-color: darken($c, 15%);
+    }
+}
