@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Showoff: Markdown for Presentations
+title: Using Showoff for Markdown Presentations
 description: Use Showoff to make slideshows and presentations in Markdown with awesome audience interactivity.
 date: 2014-12-14 00:00:00
 category: writing
