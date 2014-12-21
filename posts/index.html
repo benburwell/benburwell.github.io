@@ -4,8 +4,8 @@ title: Ben Burwell’s Writing
 description: A small collection of writing I’ve done on various topics over the years.
 ---
 
-<section class="writing">
-    {% for post in site.categories.writing %}
-        <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
+<section>
+    {% for post in site.posts %}
+        <h1><a class="post" href="{{ post.url }}">{{ post.title }}</a></h1>
     {% endfor %}
 </section>

@@ -3,7 +3,6 @@ layout: post
 title: ViewTime, A Browser Extension for YouTube
 description: ViewTime adds the amount of time a YouTube video has been played under its view count.
 date: 2014-06-08 00:00:00
-category: projects
 image: http://www.benburwell.com/assets/images/viewtime-icon.png
 chrome-webstore-item: jcplgieacjacdjabiiedcdfcpbgohbpp
 ---

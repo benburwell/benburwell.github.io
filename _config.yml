@@ -1,13 +1,20 @@
-name: Ben Burwell
+# Config options
 markdown: redcarpet
 highlighter: pygments
+sass:
+    style: :compressed
+    sass_dir: _sass
+permalink: /posts/:title/
+gems:
+    - jekyll-redirect-from
+timezone: America/New_York
+lsi: true
+
+# Site-level data
+name: Ben Burwell
 keywords:
     - ben burwell
     - freelance
     - designer
     - developer
 description: "Computer science student, hacker. Passionate about kerning and coffee."
-sass:
-    style: :compressed
-    sass_dir: _sass
-permalink: /:categories/:title/

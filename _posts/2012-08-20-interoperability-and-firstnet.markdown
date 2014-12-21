@@ -4,6 +4,7 @@ description: The United States is finally putting real effort into building a na
 date: 2012-08-20 00:00:00
 category: writing
 layout: post
+redirect_from: "/writing/interoperability-and-firstnet/"
 ---
 
 The United States is finally putting real effort into building a nationwide public safety network with [FirstNet], the First Responder Network Authority. FirstNet has been tasked by Congress to build, deploy, and maintain a nationwide broadband network for use by public safety agencies in order to provide completely interoperable communications.

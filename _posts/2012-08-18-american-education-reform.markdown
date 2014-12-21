@@ -4,6 +4,7 @@ description: Thoughts on typography and education.
 date: 2012-08-18 00:00:00
 category: writing
 layout: post
+redirect_from: "/writing/american-education-reform/"
 ---
 
 This was going to be a snarky piece on how good typographic practice is rarely found outside of the professional realm, but nobody would want to read that. Except, perhaps, for other typography nerds. And that is part of what I have to say. But a small part.

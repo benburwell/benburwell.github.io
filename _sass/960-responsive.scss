@@ -10,6 +10,7 @@ body {
 }
 
 .grid_blob,
+.grid_half,
 .grid_wide {
     display: inline;
     float: left;
@@ -19,6 +20,10 @@ body {
 
 .container .grid_blob {
     width: 220px;
+}
+
+.container .grid_half {
+    width: 440px;
 }
 
 .container .grid_wide {
@@ -57,6 +62,7 @@ body {
   }
 
   .container .grid_blob  { width: 172px; }
+  .container .grid_half { widht: 344px; }
   .container .grid_wide { width: 748px; }
 }
 
@@ -72,6 +78,7 @@ body {
   }
 
   .container .grid_blob,
+  .container .grid_half,
   .container .grid_wide {
     margin: 0;
     width: 300px;
@@ -91,6 +98,7 @@ body {
   }
 
   .container .grid_blob,
+  .container .grid_half,
   .container .grid_wide {
     margin: 0;
     width: 420px;

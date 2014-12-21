@@ -4,6 +4,7 @@ description: The subtle differences between art and design and their impact on s
 date: 2012-08-19 00:00:00
 category: writing
 layout: post
+redirect_from: "/writing/art-versus-design/"
 ---
 
 As I was skimming [a list of observations on art versus design][list], I was struck by one entry in particular:

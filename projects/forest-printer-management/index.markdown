@@ -3,7 +3,6 @@ layout: post
 title: Forest™ Printer Management System
 description: For my Software Engineering class, we built a printer management infrastructure.
 date: 2014-04-28 00:00:00
-category: projects
 ---
 
 In the Fall 2013 semester, I took a Software Engineering class. After a few weeks studying about development lifecycles, scheduling techniques, and such, we split the class into groups to propose and develop large software projects. I joined the team that was building a system that would track printer usage, display status, and collect statistics. Having previously created [a printer status project](http://mathcs.muhlenberg.edu/~bb246500/printers/), I found the idea intriguing.

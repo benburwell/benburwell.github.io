@@ -6,27 +6,26 @@ layout: master
 
     <h1>{{ page.title }}</h1>
 
-    <div class="social-buttons">
-
-        <!-- Twitter -->
-        <a href="https://twitter.com/intent/tweet?url=http%3A%2F%2Fwww.benburwell.com{{ page.url | cgi_escape }}&amp;text={{ page.title }}" onclick="window.open(this.href,
-  '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;"><span class="icon-twitter">&#xe603;</span></a>
-
-        <!-- Facebook -->
-        <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwww.benburwell.com{{ page.url | cgi_escape }}" onclick="window.open(this.href,
-  '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;"><span class="icon-facebook">&#xe602;</span></a>
-
-        <!-- Google Plus -->
-        <a href="https://plus.google.com/share?url=http%3A%2F%2Fwww.benburwell.com{{ page.url | cgi_escape }}" onclick="window.open(this.href,
-  '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;"><span class="icon-googleplus">&#xe601;</span></a>
-
-        <!-- Tumblr -->
-        <a href="https://tumblr.com/share?s=&amp;v=3&amp;t={{ page.title | cgi_escape }}&amp;u=http%3A%2F%2Fwww.benburwell.com{{ page.url | cgi_escape }}" onclick="window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;"><span class="icon-tumblr">&#xe604;</span></a>
-
-    </div>
-
     <div class="date">{{ page.date | date: "%A, %-d %B %Y" }}</div>
 
     {{ content }}
+
+    {% if page.previous %}
+    <div class="grid_half">
+      <div class="arrow">&larr;</div>
+      <div><a class="post" href="{{ page.previous.url }}">{{ page.previous.title }}</a></div>
+    </div>
+    {% endif %}
+
+    {% if page.next %}
+    <div class="grid_half right">
+      <div class="arrow">&rarr;</div>
+      <div><a class="post" href="{{ page.next.url }}">{{ page.next.title }}</a></div>
+    </div>
+    {% endif %}
+
+    {% for post in site.related_posts limit:3 %}
+    <a href="{{post.url}}">{{post.title}}</a>
+    {% endfor %}
 
 </section>
