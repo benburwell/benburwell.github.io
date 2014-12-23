@@ -4,6 +4,7 @@ title: Enhancing Printing at Muhlenberg
 description: Avoiding frustration and wasted paper by providing remote status reporting and logical DNS names.
 category: writing
 date: 2014-05-03 00:00:00
+redirect_from: "/writing/printing-at-muhlenberg/"
 ---
 
 A common frustration of Muhlenberg students is to print a document to a dorm printer only to find that the printer had no paper when going to collect it. This leads to both frustration and wasted paper, since when more paper is put into the printer, it will print out all the queued jobs from when the tray was empty. By that time, students have often given up and printed their document to another printer.

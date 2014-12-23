@@ -5,6 +5,7 @@ description: Allowing users to view the status of bugs and file bug reports cont
 date: 2014-10-10 00:00:00
 category: writing
 image: http://www.benburwell.com/assets/images/heisenbug.svg
+redirect_from: "/writing/open-bug-tracking-empowers-users/"
 ---
 
 

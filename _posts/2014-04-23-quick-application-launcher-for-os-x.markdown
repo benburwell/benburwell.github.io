@@ -4,6 +4,7 @@ title: Quick App Launcher for OS X
 description: How to remap your keyboard to quickly launch applications.
 date: 2014-04-23 00:00:00
 category: writing
+redirect_from: "/writing/quick-application-launcher-for-os-x/"
 ---
 
 I’ve been using [Alfred][] for some time now as an application launcher. If you’re not familiar with application launchers such as Alfred, it’s essentially Spotlight supercharged. It can find and launch applications, open files, perform custom web searches, even shut down your computer for you — all from commands you type in.

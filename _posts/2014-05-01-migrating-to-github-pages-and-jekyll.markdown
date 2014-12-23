@@ -4,6 +4,7 @@ title: Migrating to GitHub Pages and Jekyll
 description: How I moved my website to GitHub Pages using the Jekyll static site generator in under three hours.
 category: writing
 date: 2014-05-01 00:00:00
+redirect_from: "/writing/migrating-to-github-pages-and-jekyll/"
 ---
 
 ## Background

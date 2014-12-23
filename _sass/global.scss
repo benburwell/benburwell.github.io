@@ -14,6 +14,8 @@ $violet: #6c71c4;
 $blue: #268bd2;
 $cyan: #2aa198;
 $green: #859900;
+$black: #000000;
+$white: #ffffff;
 
 $googleplus-color: #DD4B39;
 $facebook-color: #3b5998;
@@ -24,6 +26,9 @@ $pinterest-color: #CB2027;
 $sans: 'open_sans', sans-serif;
 $serif: 'crimson_text', serif;
 $monospace: 'source_code_pro', monospace;
+
+$link-fade-time: 0.4s;
+$link-darken-amount: 20%;
 
 // Mixin to deal with cross-browser transitions
 @mixin transition ($param, $time, $type) {
@@ -36,10 +41,8 @@ $monospace: 'source_code_pro', monospace;
 
 @mixin nav_button($c) {
     background-color: $c;
-    border-color: $c;
-    @include transition(all, 0.25s, linear);
+
     &:hover {
         background-color: darken($c, 15%);
-        border-color: darken($c, 15%);
     }
 }

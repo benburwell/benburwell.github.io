@@ -4,6 +4,7 @@ date: 2012-08-25 00:00:00
 description: What Samsung did is not “theft.” There is no doubt that they blatantly copied some of Apple’s design elements, so based on our current legal system, Apple certainly had every right to pursue damages.
 layout: post
 category: writing
+redirect_from: "/writing/the-apple-samsung-battle/"
 ---
 
 On August 24, a jury in San Jose, California awarded $1,049,343,540 to Apple after Samsung was found to be in violation of their software and design patents. This case is monumental not because of the actual damages to be paid by Samsung, but because of the precedent it sets. There is no question that Samsung’s designs were inspired by (perhaps even copied from) the iPhone and iPad. In a statement following the ruling, Apple hailed the ruling “for sending a loud and clear message that stealing isn’t right,” while Samsung stated that the verdict “will lead to fewer choices, less innovation, and potentially higher prices. It is unfortunate that patent law can be manipulated to give one company a monopoly over rectangles with rounded corners.”

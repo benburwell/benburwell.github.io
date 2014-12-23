@@ -5,6 +5,7 @@ description: As more web services allow users to enable two-factor authenticatio
 date: 2014-09-30 00:00:00
 category: writing
 image: http://www.benburwell.com/assets/images/padlock.png
+redirect_from: "/writing/what-is-two-factor-authentication-and-why-does-it-matter/"
 ---
 
 With subversions of the security measures of cloud-based services on the rise, many service providers are implementing a strategy known as multi-factor authentication or simply educating their users about the implementations they’ve had for years.

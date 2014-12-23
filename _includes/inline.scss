@@ -7,38 +7,133 @@
 body {
     font-family: $serif;
     font-size: 20px;
-    color: $base02;
+    color: $black;
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-family: $sans;
-    font-weight: 600;
-    margin-top: 0.5em;
+    font-weight: 200;
+    margin-top: 1em;
     margin-bottom: 0.5em;
+    text-align: center;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 a {
     color: $red;
     text-decoration: none;
-    @include transition(color, 0.25s, linear);
+    @include transition(color, $link-fade-time, ease);
 
     &:hover {
-        color: darken($red, 15%);
+        color: darken($red, $link-darken-amount);
+    }
+
+    &.project {
+        color: $blue;
+        &:hover {
+            color: darken($blue, $link-darken-amount);
+        }
+    }
+
+    &.post {
+        color: $magenta;
+        &:hover {
+            color: darken($magenta, $link-darken-amount);
+        }
     }
 }
 
-footer {
-    font-family: $sans;
-    text-align: center;
-    padding-top: 1em;
-    padding-bottom: 2em;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    font-weight: 600;
-    font-size: 0.8em;
+p {
+    line-height: 2em;
+    margin-bottom: 2em;
+    margin-top: 2em;
+}
 
-    p {
-        margin: 1em;
+pre {
+    margin-bottom: 1.5em;
+    border-left: 3px solid $base1;
+    padding-left: 1em;
+}
+
+blockquote {
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    position: relative;
+
+    quotes: "\201C""\201D""\2018""\2019";
+
+    &:before {
+        content: open-quote;
+        color: $base1;
+        font-size: 4em;
+        margin: 0;
+        padding: 0;
+        line-height: 0;
+        position: absolute;
+        left: -0.7em;
+        top: 0.5em;
+        font-family: $monospace;
+    }
+}
+
+table {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+td {
+    font-size: 0.8em;
+    padding: 0.5em;
+    vertical-align: top;
+}
+
+ul {
+    list-style-type: square;
+}
+
+ul, ol {
+    margin-left: 2em;
+    margin-bottom: 1em;
+}
+
+li {
+    margin-bottom: 1em;
+}
+
+code {
+    font-family: $monospace;
+    font-size: 0.8em;
+    color: $base01;
+}
+
+footer {
+    font-family: $monospace;
+    text-align: center;
+    border-top: 2px solid $red;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    font-size: 0.8em;
+    @include transition(color, $link-fade-time, ease);
+    color: $base1;
+
+    a {
+        color: $base1;
+    }
+
+    &:hover {
+        color: $black;
+
+        a {
+            color: $red;
+            &:hover {
+                color: darken($red, $link-darken-amount);
+            }
+        }
     }
 }
 
@@ -47,16 +142,16 @@ header {
     font-family: $sans;
 
     a {
-        // font-size: 1em;
-        font-weight: 600;
-        color: rgb(255, 255, 255);
+        font-weight: 200;
+        color: $white;
         display: block;
+        border: none;
         text-align: center;
-        padding-top: 0.5em;
-        padding-bottom: 0.5em;
+        padding: 0.5em;
+        @include transition(all, $link-fade-time, ease);
 
         &:hover {
-            color: rgb(255, 255, 255);
+            color: $white;
         }
     }
 
@@ -64,7 +159,7 @@ header {
         @include nav_button($blue);
     }
 
-    .writing {
+    .posts {
         @include nav_button($magenta);
     }
 
@@ -78,7 +173,10 @@ header {
 }
 
 .about {
-    text-align: center;
+    p {
+        text-align: center;
+    }
+    
     width: 80%;
     margin-left: auto;
     margin-right: auto;
@@ -94,105 +192,29 @@ header {
     background-repeat: no-repeat;
 }
 
-[class^="icon-"],
-[class*=" icon-"] {
-    font-family: 'icomoon';
-    speak: none;
-    font-style: normal;
-    font-weight: normal;
-    font-variant: normal;
-    text-transform: none;
-    line-height: 1;
-
-    font-size: 32px;
-
-    /* Better Font Rendering =========== */
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+.right {
+    text-align: right;
 }
 
-p {
-    line-height: 1.7em;
-    margin-bottom: 1.7em;
-}
-
-pre {
-    margin-bottom: 1.5em;
-    border-left: 3px solid $base1;
-    padding-left: 1em;
-}
-
-
-
-.projects a {
-    color: $blue;
-    &:hover {
-        color: darken($blue, 15%);
-    }
-}
-
-.writing a {
-    color: $magenta;
-    &:hover {
-        color: darken($magenta, 15%);
-    }
+.arrow {
+    color: $base1;
+    font-family: $monospace;
+    font-size: 2em;
 }
 
 .article {
 
     .date {
-        margin-bottom: 1em;
-        font-family: $sans;
-        font-weight: 600;
+        // margin-bottom: 1em;
+        font-family: $monospace;
+        // font-weight: 200;
+        color: $base1;
+        text-align: center;
     }
 
     img {
         max-width: 100%;
     }
-
-    ul {
-        list-style-type: square;
-    }
-
-    ul, ol {
-        margin-left: 2em;
-        margin-bottom: 1em;
-    }
-
-    code {
-        font-family: $monospace;
-        font-size: 0.7em;
-        color: $base01;
-    }
-}
-
-.social-buttons {
-    float: right;
-}
-
-// &#xe601;
-.icon-googleplus {
-    color: $googleplus-color;
-}
-
-// &#xe602;
-.icon-facebook {
-    color: $facebook-color;
-}
-
-// &#xe603;
-.icon-twitter {
-    color: $twitter-color;
-}
-
-// &#xe604;
-.icon-tumblr {
-    color: $tumblr-color;
-}
-
-// &#xe605;
-.icon-pinterest {
-    color: $pinterest-color;
 }
 
 @media print {

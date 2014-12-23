@@ -4,6 +4,7 @@ description: When iOS was first introduced, it was filled with beautiful, glossy
 date: 2012-12-12 00:00:00
 category: writing
 layout: post
+redirect_from: "/writing/mobile-design-paradigm/"
 ---
 
 When iOS was first introduced, it was filled with beautiful, glossy icons with shadowing and reflections. However, there’s been a shift in the UI design as the operating system has matured.
