@@ -1,0 +1,35 @@
+@font-face {
+    font-family: 'open_sans';
+    src: url('/assets/fonts/OpenSans-Light.eot');
+    src: url('/assets/fonts/OpenSans-Light.woff') format('woff'),
+        url('/assets/fonts/OpenSans-Light.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'crimson_text';
+    src: url('/assets/fonts/crimsontext-regular.eot');
+    src: url('/assets/fonts/crimsontext-regular.woff') format('woff'),
+        url('/assets/fonts/crimsontext-regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'crimson_text';
+    src: url('/assets/fonts/crimsontext-italic.eot');
+    src: url('/assets/fonts/crimsontext-italic.woff') format('woff'),
+        url('/assets/fonts/crimsontext-italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'source_code_pro';
+    src: url('/assets/fonts/sourcecodepro-regular.eot');
+    src: url('/assets/fonts/sourcecodepro-regular.woff') format('woff'),
+        url('/assets/fonts/sourcecodepro-regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}

@@ -1,11 +1,12 @@
 ---
 layout: master
-title: Ben Burwell’s Writing
-description: A small collection of writing I’ve done on various topics over the years.
+title: Posts - Ben Burwell
+description: Irregularly updated blogish thing about stuff I’m interested in.
+redirect_from: /writing/
 ---
 
 <section>
     {% for post in site.posts %}
-        <h1><a class="post" href="{{ post.url }}">{{ post.title }}</a></h1>
+        <h2><a class="post" href="{{ post.url }}">{{ post.title }}</a></h2>
     {% endfor %}
 </section>

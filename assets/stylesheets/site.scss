@@ -1,8 +1,10 @@
-@import "fonts";
+---
+---
+
 @import "normalize";
 @import "global";
 @import "960-responsive";
-@import "syntax";
+// @import "syntax";
 
 body {
     font-family: $serif;
@@ -16,9 +18,8 @@ h1, h2, h3, h4, h5, h6 {
     margin-top: 1em;
     margin-bottom: 0.5em;
     text-align: center;
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
+    padding-left: 10%;
+    padding-right: 10%;
 }
 
 a {
@@ -52,9 +53,8 @@ p {
 }
 
 pre {
-    margin-bottom: 1.5em;
-    border-left: 3px solid $base1;
-    padding-left: 1em;
+    margin-bottom: 2em;
+    margin-top: 2em;
 }
 
 blockquote {
@@ -108,13 +108,13 @@ li {
 code {
     font-family: $monospace;
     font-size: 0.8em;
-    color: $base01;
+    // color: $base1;
 }
 
 footer {
     font-family: $monospace;
     text-align: center;
-    border-top: 2px solid $red;
+    border-top: 2px solid $base1;
     padding-top: 1em;
     padding-bottom: 1em;
     font-size: 0.8em;
@@ -138,10 +138,8 @@ footer {
 }
 
 header {
-
-    font-family: $sans;
-
     a {
+        font-family: $sans;
         font-weight: 200;
         color: $white;
         display: block;
@@ -172,19 +170,15 @@ header {
     }
 }
 
-.about {
-    p {
-        text-align: center;
-    }
-    
+.about {    
     width: 80%;
     margin-left: auto;
     margin-right: auto;
 }
 
 .portrait {
-    width: 220px;
-    height: 220px;
+    width: 200px;
+    height: 200px;
     margin-top: 2em;
     margin-left: auto;
     margin-right: auto;
@@ -192,26 +186,23 @@ header {
     background-repeat: no-repeat;
 }
 
+.center {
+    text-align: center;
+}
+
 .right {
     text-align: right;
 }
 
-.arrow {
-    color: $base1;
+.date {
+    // margin-bottom: 1em;
     font-family: $monospace;
-    font-size: 2em;
+    // font-weight: 200;
+    color: $base1;
+    text-align: center;
 }
 
-.article {
-
-    .date {
-        // margin-bottom: 1em;
-        font-family: $monospace;
-        // font-weight: 200;
-        color: $base1;
-        text-align: center;
-    }
-
+article {
     img {
         max-width: 100%;
     }
@@ -226,16 +217,8 @@ header {
         color: #000;
     }
 
-    code {
-        color: #999;
-    }
-
     header, footer {
         display: none;
         visibility: hidden;
-    }
-
-    .social-buttons {
-        display: none;
     }
 }

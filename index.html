@@ -1,14 +1,14 @@
 ---
 layout: master
-title: Ben Burwell
+title: Ben Burwell - Software Engineer
 ---
 
-<section class="about">
+<section itemscope itemtype="http://schema.org/Person" class="about">
     <p class="portrait"></p>
-    <h1>Ben Burwell</h1>
-    <p>Software engineer, student, hacker. Passionate about kerning &amp; coffee.</p>
+    <h1 itemprop="name">Ben Burwell</h1>
+    <p itemprop="description" class="center">Software engineer, student, hacker. Passionate about kerning &amp; coffee.</p>
     
     {% for post in site.posts limit:1 %}
-    <p><i>Latest post:</i> <a href="{{ post.url }}">{{ post.title }}</a></p>
+    <p class="center"><i>Latest post:</i> <a href="{{ post.url }}">{{ post.title }}</a></p>
     {% endfor %}
 </section>

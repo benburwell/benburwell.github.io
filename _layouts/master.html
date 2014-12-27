@@ -6,11 +6,13 @@
         <meta charset="UTF-8">
 
         <style type="text/css">
-            {% capture inline %}
-                {% include inline.scss %}
+            {% capture fonts %}
+                {% include fonts.scss %}
             {% endcapture %}
-            {{ inline | scssify }}
+            {{ fonts | scssify }}
         </style>
+
+        <link rel="stylesheet" type="text/css" href="/assets/stylesheets/site.css">
 
         <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
 
@@ -90,7 +92,7 @@
             <footer class="grid_wide">
                 <div><a href="/">Ben</a> / <a href="/pgp/">PGP</a> / <a href="/theatre/">Theatre</a></div>
                 <div><a href="mailto:hi@benburwell.com">Email</a> / <a href="https://twitter.com/bburwell">Twitter</a> / <a href="https://ello.co/benburwell">Ello</a> / <a href="https://github.com/benburwell">GitHub</a></div>
-                <div><a rel="license" href="http://creativecommons.org/licenses/by/4.0/">CC-BY</a></div>
+                <div><a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution License</a></div>
             </footer>
         </div>
     </body>

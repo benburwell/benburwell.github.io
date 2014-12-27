@@ -11,14 +11,6 @@ I recently wrote about [migrating my website to GitHub Pages](/writing/migrating
 
 Using [Git hooks](http://git-scm.com/book/en/Customizing-Git-Git-Hooks), it’s possible to run a script at certain points during the Git workflow. To take advantage of this in my case, I added a small bash script to `.git/hooks/pre-commit`:
 
-```bash
-#!/bin/sh
-
-export PATH=/usr/local/bin:$PATH
-cd /Users/Ben/Documents/Code/benburwell.github.io/assets/less
-lessc --clean-css style.less ../css/style.css
-cd /Users/Ben/Documents/Code/benburwell.github.io
-git add /Users/Ben/Documents/Code/benburwell.github.io/assets/css/style.css
-```
+{% gist benburwell/0ef673f6311b5191186e %}
 
 This is a pretty rough script, but it gets the job done for me. For a much more thorough script, see [this article by TJ VanToll](http://tjvantoll.com/2012/07/07/the-ideal-less-workflow-with-git/).
