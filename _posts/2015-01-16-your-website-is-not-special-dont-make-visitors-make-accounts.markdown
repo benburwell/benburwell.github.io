@@ -22,8 +22,7 @@ And if you do offer accounts, here are a couple of rules to follow to ensure a g
 Of course, there are technical details that you need to be watching out for that are outside the scope of this post. I'll leave it to you to make sure your implementation is secure and robust, but I'll leave you with a few general tips:
 
 * Don't invent your own crypto. This applies to protocols, hashing, encryption, everything.
-* Use salt.
-* Use a slow, secure hash function like SHA-256. Don't use MD5!
+* Use [bcrypt](http://codahale.com/how-to-safely-store-a-password/). Don't use MD5!
 * Using unsecured HTTP (no SSL/TLS) is inexcusable.
 * Don't invent your own crypto.
 * *Don't invent your own crypto.*
