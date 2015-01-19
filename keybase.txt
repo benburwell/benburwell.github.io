@@ -1,0 +1,72 @@
+==================================================================
+https://keybase.io/benburwell
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://www.benburwell.com
+  * I am benburwell (https://keybase.io/benburwell) on keybase.
+  * I have a public key with fingerprint B444 48F3 E5DA 064E 09E0  5F06 6661 12D9 67A3 6ECD
+
+To claim this, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "fingerprint": "b44448f3e5da064e09e05f06666112d967a36ecd",
+            "host": "keybase.io",
+            "key_id": "666112d967a36ecd",
+            "kid": "0101a372b816c0b208bd1d633c90434baaca2650c0539fd8ead993fdbb5575ab0b090a",
+            "uid": "06aca3c2c0f19268073ee6fd02031300",
+            "username": "benburwell"
+        },
+        "service": {
+            "hostname": "www.benburwell.com",
+            "protocol": "https:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1421646178,
+    "expire_in": 157680000,
+    "prev": "8cae441de658d57fad6ba183d4388ad44b70147597bae35592bfd48dea1fdd34",
+    "seqno": 8,
+    "tag": "signature"
+}
+
+with the aforementioned key, yielding the PGP signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: GnuPG v1.4.15 (GNU/Linux)
+
+owFtkn9MVWUYx+9FQrkbjvgx1k0dnUXSIvaen/ecC4iml4Z0sRQLcoudc973XM6A
+c2/nXLiXKZtGqeWAXHiJH5kKEtoSf1GZZLI2GT+3KFCxaASEGL9KcKaJnUO2/un5
+5937PN/v53mfZ+/7YctMQWaJj7jualB6zd2TgimrraZgJya4YQlm34nlo6VDkhUX
+Uj2qrHgxOyZQerASiWjIA4ZCgEOAlgCjB44TkGNsPMkgEWIJWJ5bMxw6RuA1lCi7
+9Zx+yZWhnv0fff5SAeAA50kbIbA4IwKBAKwAcciQpMgBiqQEnhd5gqGBCGiSkyCL
+eMhxpAQFgaZtNC8AAXCA13FF/+AYXU+KhAgknCMYFthIhBgJAgKQOAmAIdSQqvCF
+yJgOKUKR6kMFBVhpAqbni2URGUswZnmk8fl8if/pEkV3oc7wqG6vW3QX6PU8r9ej
+2Q2/t8SzZEBC7iNUriArUN+n7ihGqia7FcyO60rRKxtsnCJwhmJwG5uAIb9HVlGu
+bChom/5wPYw+qFhHsiKPKAqHiKFZSNskHjICj7MkpEiW5SFFCTaAUzaaswk8Imma
+IwQJUixEPC5BSFKYMdybihuz6528vEtHarLFpfDeIhVhpZZ3g1YFm8xBppDHgow/
+YbKEhv/7Uc7uCTdVp/gKMbI9+IeQz+PGL+yPO+Q6dunBaqL07d4Vftdr9dfXhlY5
+Ngw6OrXK8g3fDp8vy3j+RP326VHyvn2u4WLkVMv92VcPpi2femdgbuivJ7etf1jY
++aNSOZ9UF1+VE6isiEgqXqOaxsenD9i7Dob0ui4VWVsbb62Nzn9p4K2tZZpz8mZP
+XuaXv92bH04W+9b1psWZSrgnImFjLTUDZr2hkS1P34gJanqqYi82KG8LmFt/yfTP
+YsmXd9USwS13L6e0We+ciW/YFNjFeOQF66LTd6qyeuWyU63Xors3UmGfOTx+c3nH
+1ekPvYuNv5rDnumRP3L8MffFQkcOmz/W6cw6s6ovamJvx7Op07HQaerviR37yVuY
+tjnlXt83L4dnLFzoOnkgK7V281j/7jVNyzXH2ZyogXVV5mHLDa156njE6cN8hTN8
+7mZpoH6j/U4tP38VJXaNlNzqLn89+tOcc4v7Wi3xle8Nfdcy2rz6jf7HQ4+e/DP0
+heOpI+di83YQHe65r2H6w5iRsO81U/FER3Z15CcOdgfX5p82R61YXxPyoM768RX1
+WHfG7aTnrE1se6qSntAz9Pvd0UAI1t2+Jzp94nR//cqqFzflWHvM1xJniMGhVyad
+NdsLhg71zsRFxWT3be3KTj5yJb4srDkh37//g5+3BDK/SmuuPrLv8ImLNbd3BzzR
+6nlL3d8=
+=KPtm
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/benburwell
+
+==================================================================
