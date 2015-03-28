@@ -86,7 +86,7 @@ table {
     margin-bottom: 1em;
 }
 
-td {
+table.data-table td {
     font-size: 0.8em;
     padding: 0.5em;
     vertical-align: top;
@@ -109,6 +109,16 @@ code {
     font-family: $monospace;
     font-size: 0.8em;
     // color: $base1;
+}
+
+kbd {
+  font-size: 0.7em;
+  border: 1px solid $base1;
+  border-radius: 3px;
+  padding: 1px 5px;
+  border-bottom-width: 2px;
+  color: $base01;
+  font-family: $monospace;
 }
 
 footer {
@@ -170,7 +180,7 @@ header {
     }
 }
 
-.about {    
+.about {
     width: 80%;
     margin-left: auto;
     margin-right: auto;
