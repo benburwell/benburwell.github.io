@@ -5,11 +5,9 @@ description: Projects I’ve done.
 ---
 
 {% for project in site.data.projects %}
-{% if project.live %}
-<h1><a href="{{ project.live }}">{{ project.name }}</a></h1>
-{% else %}
-<h1>{{ project.name }}</h1>
-{% endif %}
+
+<h1>{{ project.name }} {% if project.live %}<a style="font-size:1rem;" title="{{ project.title }}" href="{{ project.live }}" target="_blank"><i class="fa fa-external-link"></i></a>{% endif %}</h1>
+
 <ul class="compressed-list">
   <li>{{ project.description }}</li>
   <li>{{ project.tech }}</li>
