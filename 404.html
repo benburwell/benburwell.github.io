@@ -1,0 +1,15 @@
+---
+title: Well, this is embarrassing.
+description: Page not found — that’s a 404 :(
+layout: master
+---
+
+<h1>404 - Not Found</h1>
+
+<p>Perhaps you'd be interested in one of the following?</p>
+
+<ul>
+  {% for post in site.posts limit:5 %}
+  <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+  {% endfor %}
+</ul>

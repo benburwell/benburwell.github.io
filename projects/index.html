@@ -4,14 +4,17 @@ title: Ben Burwell’s Projects
 description: Projects I’ve done.
 ---
 
-<section>
-    <h2><a class="project" href="/projects/viewtime/">ViewTime, a Browser Extension for YouTube&trade;</a></h2>
-
-    <h2><a class="project" href="/projects/forest-printer-management/">Forest&trade; Printer Management System</a></h2>
-
-    <h2><a class="project" href="/projects/mdengine/">MDEngine</a></h2>
-
-    <h2><a class="project" href="/projects/helvetica/">Helvetica for Safari and Chrome</a></h2>
-
-    <h2><a class="project" href="/projects/unified-show-control/">Unified Show Control</a></h2>
-</section>
+{% for project in site.data.projects %}
+{% if project.live %}
+<h1><a href="{{ project.live }}">{{ project.name }}</a></h1>
+{% else %}
+<h1>{{ project.name }}</h1>
+{% endif %}
+<ul class="compressed-list">
+  <li>{{ project.description }}</li>
+  <li>{{ project.tech }}</li>
+  {% if project.github %}
+  <li><a href="https://github.com/{{ project.github }}"><i class="fa fa-github"></i> {{ project.github }}</a></li>
+  {% endif %}
+</ul>
+{% endfor %}

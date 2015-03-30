@@ -1,0 +1,66 @@
+html {
+  font-size: 20px;
+}
+
+body {
+  font-family: $serif;
+  font-weight: normal;
+  font-size: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+article, aside, p {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+}
+
+strong {
+  font-weight: bold;
+}
+
+em {
+  font-style: italic;
+}
+
+pre, code, kbd {
+  font-family: $monospace;
+}
+
+pre {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+a {
+  text-decoration: none;
+  background: transparent;
+  color: inherit;
+  cursor: pointer;
+}
+
+time {
+  display: inline;
+}
+
+hr {
+  border-width: 1px;
+  border-color: $gray;
+  border-style: dotted none none none;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+ul, ol {
+  margin: 0;
+}
+
+li {
+  margin: 1rem;
+}

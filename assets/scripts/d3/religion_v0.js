@@ -40,7 +40,7 @@
     return religion_array;
   };
 
-  var width = 960;
+  var width = 900;
   var barHeight = 25;
   var margin = 215;
 

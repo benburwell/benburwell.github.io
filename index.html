@@ -2,13 +2,35 @@
 layout: master
 title: Ben Burwell - Software Engineer
 ---
+<section class="about split">
+  <div class="left">
+    <pre>
+{
+  "<em>name</em>": "<em>Ben Burwell</em>",
+  "<em>twitter</em>": "<a href="https://twitter.com/bburwell">@bburwell</a>",
+  "<em>github</em>": "<a href="https://github.com/benburwell">@benburwell</a>",
+  "<em>keybase</em>": "<a href="https://keybase.io/benburwell">@benburwell</a>",
+  "<em>email</em>": {
+    "<em>address</em>": "<a href="mailto:ben@benburwell.com">ben@benburwell.com</a>",
+    "<em>pgp</em>": "<a href="https://keybase.io/benburwell/key.asc">6661 12D9 67A3 6ECD</a>"
+  },
+  "<em>resume</em>": {
+    "<em>pdf</em>": "<a href="/assets/pdf/Ben_Burwell_Resume.pdf">resume.pdf</a>",
+    "<em>tex</em>": "<a href="https://raw.githubusercontent.com/benburwell/resume/master/resume.tex">resume.tex</a>"
+  }
+}
+    </pre>
+  </div>
 
-<section itemscope itemtype="http://schema.org/Person" class="about">
-    <p class="portrait"></p>
-    <h1 itemprop="name">Ben Burwell</h1>
-    <p itemprop="description" class="center">Software engineer, student, hacker. Passionate about kerning &amp; coffee.</p>
-    
-    {% for post in site.posts limit:1 %}
-    <p class="center"><i>Latest post:</i> <a href="{{ post.url }}">{{ post.title }}</a></p>
-    {% endfor %}
+  <div class="right">
+    <h2>Recent Posts</h2>
+    <ul class="compressed-list">
+      {% for post in site.posts limit:3 %}
+      <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+      {% endfor %}
+    </ul>
+
+    <h2>About</h2>
+    <p>I am a software engineer, security &amp; crypto enthusiast, <a href="/theatre/">lighting designer</a>, and <code>zsh</code> user. I'm passionate about kerning and coffee.</p>
+  </div>
 </section>

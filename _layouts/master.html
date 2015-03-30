@@ -1,99 +1,92 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>{{ page.title }}</title>
+  <head>
+    <title>{{ page.title }}</title>
 
-        <meta charset="UTF-8">
+    <meta charset="UTF-8">
 
-        <style type="text/css">
-            {% capture fonts %}
-                {% include fonts.scss %}
-            {% endcapture %}
-            {{ fonts | scssify }}
-        </style>
+    <style type="text/css">
+        {% capture fonts %}
+            {% include fonts.scss %}
+        {% endcapture %}
+        {{ fonts | scssify }}
+    </style>
 
-        <link rel="stylesheet" type="text/css" href="/assets/stylesheets/site.css">
+    <link rel="stylesheet" type="text/css" href="/assets/stylesheets/site.css">
 
-        <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
 
-        <link rel="shortcut icon" href="/assets/images/icons/favicon.ico" sizes="128x128">
-        <link rel="apple-touch-icon" href="/assets/images/icons/apple/apple-touch-icon-57x57.png" sizes="57x57">
-        <link rel="apple-touch-icon" href="/assets/images/icons/apple/apple-touch-icon-72x72.png" sizes="72x72">
-        <link rel="apple-touch-icon" href="/assets/images/icons/apple/apple-touch-icon-76x76.png" sizes="76x76">
-        <link rel="apple-touch-icon" href="/assets/images/icons/apple/apple-touch-icon-114x114.png" sizes="114x114">
-        <link rel="apple-touch-icon" href="/assets/images/icons/apple/apple-touch-icon-120x120.png" sizes="120x120">
-        <link rel="apple-touch-icon" href="/assets/images/icons/apple/apple-touch-icon-144x144.png" sizes="144x144">
-        <link rel="apple-touch-icon" href="/assets/images/icons/apple/apple-touch-icon-152x152.png" sizes="152x152">
+    <link rel="shortcut icon" href="/assets/images/icons/favicon.ico" sizes="128x128">
+    <link rel="apple-touch-icon" href="/assets/images/icons/apple/apple-touch-icon-57x57.png" sizes="57x57">
+    <link rel="apple-touch-icon" href="/assets/images/icons/apple/apple-touch-icon-72x72.png" sizes="72x72">
+    <link rel="apple-touch-icon" href="/assets/images/icons/apple/apple-touch-icon-76x76.png" sizes="76x76">
+    <link rel="apple-touch-icon" href="/assets/images/icons/apple/apple-touch-icon-114x114.png" sizes="114x114">
+    <link rel="apple-touch-icon" href="/assets/images/icons/apple/apple-touch-icon-120x120.png" sizes="120x120">
+    <link rel="apple-touch-icon" href="/assets/images/icons/apple/apple-touch-icon-144x144.png" sizes="144x144">
+    <link rel="apple-touch-icon" href="/assets/images/icons/apple/apple-touch-icon-152x152.png" sizes="152x152">
 
-        <meta name="author" content="Ben Burwell">
-        {% if page.description %}
-        <meta name="description" content="{{ page.description }}">
-        {% else %}
-        <meta name="description" content="{{ site.description }}">
-        {% endif %}
-        <meta name="keywords" content="{{ site.keywords | join: ',' }}">
+    <meta name="author" content="Ben Burwell">
+    {% if page.description %}
+    <meta name="description" content="{{ page.description }}">
+    {% else %}
+    <meta name="description" content="{{ site.description }}">
+    {% endif %}
+    <meta name="keywords" content="{{ site.keywords | join: ',' }}">
 
-        <meta property="og:title" content="{{ page.title }}">
-        <meta property="og:site_name" content="Ben Burwell">
-        {% if page.description %}
-        <meta property="og:description" content="{{ page.description}}">
-        {% else %}
-        <meta property="og:description" content="{{ site.description }}">
-        {% endif %}
-        {% if page.image %}
-        <meta property="og:image" content="{{ page.image }}">
-        {% else %}
-        <meta property="og:image" content="http://www.benburwell.com/assets/images/icons/benburwell.png">
-        {% endif %}
-        <meta property="og:type" content="article">
-        <meta property="og:url" content="http%3A%2F%2Fwww.benburwell.com{{ page.url | cgi_escape }}">
-        <meta property="article:author" content="Ben Burwell">
-        <meta property="fb:admins" content="1439777397">
+    <meta property="og:title" content="{{ page.title }}">
+    <meta property="og:site_name" content="Ben Burwell">
+    {% if page.description %}
+    <meta property="og:description" content="{{ page.description}}">
+    {% else %}
+    <meta property="og:description" content="{{ site.description }}">
+    {% endif %}
+    {% if page.image %}
+    <meta property="og:image" content="{{ page.image }}">
+    {% else %}
+    <meta property="og:image" content="http://www.benburwell.com/assets/images/icons/benburwell.png">
+    {% endif %}
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="http%3A%2F%2Fwww.benburwell.com{{ page.url | cgi_escape }}">
+    <meta property="article:author" content="Ben Burwell">
+    <meta property="fb:admins" content="1439777397">
 
-        <meta name="twitter:card" content="summary">
-        <meta name="twitter:site" content="@bburwell">
-        <meta name="twitter:title" content="{{ page.title }}">
-        <meta name="twitter:creator" content="@bburwell">
-        {% if page.description %}
-        <meta property="twitter:description" content="{{ page.description}}">
-        {% else %}
-        <meta property="twitter:description" content="{{ site.description }}">
-        {% endif %}
-        {% if page.image %}
-        <meta name="twitter:image:src" content="{{ page.image }}">
-        {% else %}
-        <meta name="twitter:image:src" content="http://www.benburwell.com/assets/images/icons/benburwell.png">
-        {% endif %}
-        <meta name="twitter:domain" content="BenBurwell.com">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@bburwell">
+    <meta name="twitter:title" content="{{ page.title }}">
+    <meta name="twitter:creator" content="@bburwell">
+    {% if page.description %}
+    <meta property="twitter:description" content="{{ page.description}}">
+    {% else %}
+    <meta property="twitter:description" content="{{ site.description }}">
+    {% endif %}
+    {% if page.image %}
+    <meta name="twitter:image:src" content="{{ page.image }}">
+    {% else %}
+    <meta name="twitter:image:src" content="http://www.benburwell.com/assets/images/icons/benburwell.png">
+    {% endif %}
+    <meta name="twitter:domain" content="BenBurwell.com">
 
-        {% if page.chrome-webstore-item %}
-        <link rel="chrome-webstore-item" href="https://chrome.google.com/webstore/detail/{{ page.chrome-webstore-item }}">
-        {% endif %}
-    </head>
-    <body>
-        <div class="container">
-            <header class="top_nav_bar">
-                <div class="grid_blob">
-                    <a class="projects" href="/projects/">Projects</a>
-                </div>
-                <div class="grid_blob">
-                    <a class="posts" href="/posts/">Posts</a>
-                </div>
-                <div class="grid_blob">
-                    <a class="github" href="https://github.com/benburwell" target="_blank">GitHub</a>
-                </div>
-                <div class="grid_blob">
-                    <a class="resume" href="/assets/pdf/Ben_Burwell_Resume.pdf">Résumé</a>
-                </div>
-            </header>
-            <main class="grid_wide">
-                {{ content }}
-            </main>
-            <footer class="grid_wide">
-                <div><a href="/">Ben</a> / <a href="/pgp/">PGP</a> / <a href="/theatre/">Theatre</a></div>
-                <div><a href="mailto:hi@benburwell.com">Email</a> / <a href="https://twitter.com/bburwell">Twitter</a> / <a href="https://github.com/benburwell">GitHub</a></div>
-                <div><a href="/license/">License</a> / <a href="/privacy/">Privacy</a></div>
-            </footer>
-        </div>
-    </body>
+    {% if page.chrome-webstore-item %}
+    <link rel="chrome-webstore-item" href="https://chrome.google.com/webstore/detail/{{ page.chrome-webstore-item }}">
+    {% endif %}
+  </head>
+  <body>
+    <header class="top-header print-hide">
+      <nav>
+        <a class="" href="/">benburwell.com</a>
+        <a class="posts" href="/posts/">/posts</a>
+        <a class="projects" href="/projects/">/projects</a>
+      </nav>
+    </header>
+    <main>
+      {{ content }}
+    </main>
+    <footer class="print-hide">
+      <div class="social-icons">
+        <a href="https://github.com/benburwell"><i class="fa fa-2x fa-github"></i></a>
+        <a href="https://twitter.com/bburwell"><i class="fa fa-2x fa-twitter"></i></a>
+      </div>
+      <div><a href="/license/">&copy; 2015</a> &bull; <a href="/privacy/">Privacy</a></div>
+    </footer>
+  </body>
 </html>

@@ -5,10 +5,33 @@ layout: master
 <article itemscope itemtype="http://schema.org/BlogPosting" class="article">
     <header>
         <h1 itemprop="headline">{{ page.title }}</h1>
-        <div class="date"><time itemprop="datePublished">{{ page.date | date: "%A, %-d %B %Y" }}</time></div>
+        <p><time itemprop="datePublished">{{ page.date | date: "%A, %-d %B %Y" }}</time></p>
     </header>
 
     <div itemprop="articleBody">
         {{ content }}
     </div>
 </article>
+
+<div class="print-hide">
+  <div class="split">
+    {% if page.previous %}
+    <div class="left align-left sans">
+      <a href="{{ page.previous.url }}"><i class="fa fa-chevron-left"></i> Previous Post</a>
+    </div>
+    {% endif %}
+
+    {% if page.next %}
+    <div class="right align-right sans">
+      <a href="{{ page.next.url }}">Next Post <i class="fa fa-chevron-right"></i></a>
+    </div>
+    {% endif %}
+  </div>
+
+  <div class="center">
+    <p><em>&mdash; Related Posts &mdash;</em></p>
+    {% for post in site.related_posts limit:3 %}
+    <p><a href="{{ post.url }}">{{ post.title }}</a></p>
+    {% endfor %}
+  </div>
+</div>

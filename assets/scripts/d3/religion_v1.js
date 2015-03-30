@@ -27,7 +27,7 @@
     return religion_array;
   };
 
-  var width = 960;
+  var width = 900;
   var height = 400;
   var radius = Math.min(width, height) / 2;
 

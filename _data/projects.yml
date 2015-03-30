@@ -1,0 +1,49 @@
+- name: BergEMS.org
+  description: An EMS agency management web application for tracking member records, scheduling shifts, and more.
+  tech: Node.js, MongoDB, Heroku
+  github: benburwell/MCEMS-Site
+  live: https://www.bergems.org/
+
+- name: actiondoc
+  description: A documentation generator for the Actionhero.js API framework.
+  tech: Angular
+  github: benburwell/actiondoc
+  live: http://actiondoc.benburwell.com/
+
+- name: Simple Weather App
+  description: A simple demo web app showcasing the HTML5 geolocation API
+  tech: HTML5 Geolocation API, JavaScript, OpenWeatherMap API
+  github: benburwell/weather
+  live: http://weather.benburwell.com/
+
+- name: Forest Printer Management System API
+  description: In Software Engineering class, my team created a printer monitoring platform called Forest.
+  tech: Node.js, Actionhero.js, Heroku
+  github: printerSystemCSI210/api-server
+  live: /posts/forest-printer-management/
+
+- name: Article Management Interface
+  description: A web application I created for my high school newspaper to help manage the publishing workflow
+  tech: HTML, PHP, JavaScript, CSS, MySQL
+  github: benburwell/ami
+
+- name: Music Analysis Project
+  description: For an independent study project, we created an npm package, API server, and browser extensions to analyze the difficulty of music posted to Musescore.org
+  tech: Node.js, Heroku, Actionhero.js, Google Chrome extensions, Firefox extensions, Safari extensions, npm
+  github: csi970
+
+- name: Helvetica
+  description: A browser extension for Google Chrome and Safari that transforms all text to Helvetica.
+  tech: Google Chrome extension framework, Safari extension framework
+  github: benburwell/Helvetica
+
+- name: Resume
+  description: My resume, created in LaTeX
+  tech: LaTeX
+  github: benburwell/resume
+  live: /assets/pdf/Ben_Burwell_Resume.pdf
+
+- name: MDEngine
+  description: A really simple Markdown to HTML framework for Apache
+  tech: Apache web server, PHP, HTML, CSS
+  github: benburwell/MDEngine
