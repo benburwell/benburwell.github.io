@@ -1,6 +1,6 @@
 - name: BergEMS.org
   description: An EMS agency management web application for tracking member records, scheduling shifts, and more.
-  tech: Node.js, MongoDB, Heroku
+  tech: Node.js, Express, MongoDB, Heroku, jQuery
   github: benburwell/MCEMS-Site
   live: https://www.bergems.org/
 
@@ -17,18 +17,23 @@
   live: http://weather.benburwell.com/
 
 - name: Forest Printer Management System API
-  description: In Software Engineering class, my team created a printer monitoring platform called Forest.
+  description: In Software Engineering class, my team created a printer monitoring platform called Forest to gather and display statistics about network printers.
   tech: Node.js, Actionhero.js, Heroku
   github: printerSystemCSI210/api-server
   live: /posts/forest-printer-management/
 
 - name: Article Management Interface
-  description: A web application I created for my high school newspaper to help manage the publishing workflow
+  description: A web application I created for my high school newspaper to help manage the publishing workflow.
   tech: HTML, PHP, JavaScript, CSS, MySQL
   github: benburwell/ami
 
+- name: MPX
+  description: A small operating system developed for class. After booting into DOS, running this program overwrote the system interrupt vector table to transfer control to the program. I/O happened.
+  tech: C, DOS, dumb terminals, line printers, and more!
+  github: benburwell/mpx
+
 - name: Music Analysis Project
-  description: For an independent study project, we created an npm package, API server, and browser extensions to analyze the difficulty of music posted to Musescore.org
+  description: For an independent study project, we created an npm package, API server, and browser extensions to analyze the difficulty of music posted to Musescore.org.
   tech: Node.js, Heroku, Actionhero.js, Google Chrome extensions, Firefox extensions, Safari extensions, npm
   github: csi970
 
@@ -38,12 +43,12 @@
   github: benburwell/Helvetica
 
 - name: Resume
-  description: My resume, created in LaTeX
+  description: My resume, created in LaTeX.
   tech: LaTeX
   github: benburwell/resume
   live: /assets/pdf/Ben_Burwell_Resume.pdf
 
 - name: MDEngine
-  description: A really simple Markdown to HTML framework for Apache
+  description: A stupidly simple Markdown to HTML framework for Apache
   tech: Apache web server, PHP, HTML, CSS
   github: benburwell/MDEngine
