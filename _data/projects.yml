@@ -1,54 +1,54 @@
-- name: BergEMS.org
-  description: An EMS agency management web application for tracking member records, scheduling shifts, and more.
-  tech: Node.js, Express, MongoDB, Heroku, jQuery
-  github: benburwell/MCEMS-Site
-  live: https://www.bergems.org/
+- name: "BergEMS.org"
+  description: "An EMS agency management web application for tracking member records, scheduling shifts, and more."
+  tech: "Node.js, Express, MongoDB, Heroku, jQuery"
+  github: "benburwell/MCEMS-Site"
+  live: "https://www.bergems.org/"
 
-- name: actiondoc
-  description: A documentation generator for the Actionhero.js API framework.
-  tech: Angular
-  github: benburwell/actiondoc
-  live: http://actiondoc.benburwell.com/
+- name: "actiondoc"
+  description: "Actionhero is a great API framework for Node.js that lets you automatically document your API in JSON. Actiondoc takes that one step further and provides a beautiful interface for your API's documentation."
+  tech: "Angular"
+  github: "benburwell/actiondoc"
+  live: "http://actiondoc.benburwell.com/"
 
-- name: Simple Weather App
-  description: A simple demo web app showcasing the HTML5 geolocation API
-  tech: HTML5 Geolocation API, JavaScript, OpenWeatherMap API
-  github: benburwell/weather
-  live: http://weather.benburwell.com/
+- name: "Weather web app"
+  description: "A simple web app showcasing the HTML5 geolocation API. Pulls current weather conditions for your location from OpenWeatherMap."
+  tech: "HTML5 Geolocation API"
+  github: "benburwell/weather"
+  live: "http://weather.benburwell.com/"
 
-- name: Forest Printer Management System API
-  description: In Software Engineering class, my team created a printer monitoring platform called Forest to gather and display statistics about network printers.
-  tech: Node.js, Actionhero.js, Heroku
-  github: printerSystemCSI210/api-server
-  live: /posts/forest-printer-management/
+- name: "Printer Management System"
+  description: "In Software Engineering class, my team created a printer monitoring platform called Forest to gather and display statistics about network printers. See my blog post about it for more details!"
+  tech: "Ruby, PHP, Node.js, MongoDB"
+  github: "printerSystemCSI210"
+  live: "/posts/forest-printer-management/"
 
-- name: Article Management Interface
-  description: A web application I created for my high school newspaper to help manage the publishing workflow.
-  tech: HTML, PHP, JavaScript, CSS, MySQL
-  github: benburwell/ami
+- name: "Article Management Interface"
+  description: "A web application I created for my high school newspaper to help manage the publishing workflow. Routes articles through the editorial cycle and tracks them from first upload by author through publication."
+  tech: "PHP, JavaScript, CSS, MySQL"
+  github: "benburwell/ami"
 
-- name: MPX
-  description: A small operating system developed for class. After booting into DOS, running this program overwrote the system interrupt vector table to transfer control to the program. I/O happened.
-  tech: C, DOS, dumb terminals, line printers, and more!
-  github: benburwell/mpx
+- name: "MPX"
+  description: "A small operating system developed for class. After booting into DOS, running this program overwrote the system interrupt vector table to transfer control to the program. I/O happened. For more details, check out the technical manual in the GitHub repo."
+  tech: "C, DOS, dumb terminals, line printers, and more!"
+  github: "benburwell/mpx"
 
-- name: Music Analysis Project
-  description: For an independent study project, we created an npm package, API server, and browser extensions to analyze the difficulty of music posted to Musescore.org.
-  tech: Node.js, Heroku, Actionhero.js, Google Chrome extensions, Firefox extensions, Safari extensions, npm
-  github: csi970
+- name: "Music Analysis Project"
+  description: "For an independent study project, we created an npm package, API server using Actionhero.js, and Chrome, Firefox, and Safari browser extensions to analyze the difficulty of music posted to Musescore.org."
+  tech: "Node.js, Heroku, browser extensions"
+  github: "csi970"
 
-- name: Helvetica
-  description: A browser extension for Google Chrome and Safari that transforms all text to Helvetica.
-  tech: Google Chrome extension framework, Safari extension framework
-  github: benburwell/Helvetica
+- name: "Helvetica"
+  description: "My first forray into browser extensions was this simple one for Google Chrome and Safari. It transforms all text to Helvetica. Hasn't been touched in a while."
+  tech: "browser extension APIs"
+  github: "benburwell/Helvetica"
 
-- name: Resume
-  description: My resume, created in LaTeX.
-  tech: LaTeX
-  github: benburwell/resume
-  live: /assets/pdf/Ben_Burwell_Resume.pdf
+- name: "Resume"
+  description: "Yup, that's right: I made my reume in LaTeX."
+  tech: "LaTeX"
+  github: "benburwell/resume"
+  live: "/assets/pdf/Ben_Burwell_Resume.pdf"
 
-- name: MDEngine
-  description: A stupidly simple Markdown to HTML framework for Apache
-  tech: Apache web server, PHP, HTML, CSS
-  github: benburwell/MDEngine
+- name: "MDEngine"
+  description: "A stupidly simple Markdown to HTML framework for Apache. You can even choose a theme!"
+  tech: "Apache web server, PHP, HTML, CSS"
+  github: "benburwell/MDEngine"
