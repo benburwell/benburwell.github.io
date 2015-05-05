@@ -6,13 +6,20 @@ description: Projects I’ve done.
 
 {% for project in site.data.projects %}
 
-<h1>{{ project.name }} {% if project.live %}<a style="font-size:1rem;" title="{{ project.title }}" href="{{ project.live }}" target="_blank"><i class="fa fa-external-link"></i></a>{% endif %}</h1>
+  <h1>
+    {% if project.live %}
+      <a href="{{ project.live }}" target="_blank">{{ project.name }}</a>
+    {% else %}
+      {{ project.name }}
+    {% endif %}
+    <small class="light-gray monospace">{{ project.tech }}</small>
+  </h1>
 
-<ul class="compressed-list">
-  <li>{{ project.description }}</li>
-  <li>{{ project.tech }}</li>
-  {% if project.github %}
-  <li><a href="https://github.com/{{ project.github }}"><i class="fa fa-github"></i> {{ project.github }}</a></li>
-  {% endif %}
-</ul>
+  <p>
+    {{ project.description }}
+    {% if project.github %}
+      <a style="display:inline-block;margin-left:1rem;" href="https://github.com/{{ project.github }}"><i class="fa fa-github"></i> Read the code</a>
+    {% endif %}
+  </p>
+
 {% endfor %}

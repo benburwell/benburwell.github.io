@@ -18,6 +18,14 @@
   font-family: $sans;
 }
 
+.monospace {
+  font-family: $monospace;
+}
+
+.light-gray {
+  color: $light-gray;
+}
+
 .compressed-list li {
   margin: 0;
 }
