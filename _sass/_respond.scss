@@ -1,7 +1,6 @@
 // Set up default container
 .container {
   display: block;
-  width: 100%;
   margin-left: auto;
   margin-right: auto;
   margin-top: 0;
@@ -30,15 +29,15 @@
 }
 
 // Set a layout breakpoint at 768px for tablets
-@media only screen and (min-width: 768px) and (max-width: 899px) {
+@media only screen and (min-width: 768px) and (max-width: 799px) {
   .container {
     width: 768px;
   }
 }
 
 // Set a layout breakpoint at 900px for desktops
-@media only screen and (min-width: 900px) {
+@media only screen and (min-width: 800px) {
   .container {
-    width: 900px;
+    width: 800px;
   }
 }
