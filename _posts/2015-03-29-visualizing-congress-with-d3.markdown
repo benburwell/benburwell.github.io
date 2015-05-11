@@ -60,7 +60,7 @@ Since the random sample is being taken in the client, you should see a new chart
 
 <hr>
 
-After a brief exploration of D3, it's clear that it's an extremely powerful if not completely intuitive library for building rich data-driven documents. I'm excited to continue learning more about D3 and using it in my own projects. You should definitely take a look at [Mike Bostock's site](http://bost.ocks.org/mike/) for some much cooler applications of D3 from its creator. There's also a [gallery](https://github.com/mbostock/d3/wiki/Gallery) as well as [tons of other examples](http://bl.ocks.org/mbostock). And of course, you can check out the [D3 source code on GitHub](https://github.com/mbostock/d3).
+After a brief exploration of D3, it is clearly an extremely powerful &mdash; if not completely intuitive &mdash; library for building rich data-driven documents. I'm excited to continue learning more about D3 and using it in my own projects. You should definitely take a look at [Mike Bostock's site](http://bost.ocks.org/mike/) for some much cooler applications of D3 from its creator. There's also a [gallery](https://github.com/mbostock/d3/wiki/Gallery) as well as [tons of other examples](http://bl.ocks.org/mbostock). And of course, you can check out the [D3 source code on GitHub](https://github.com/mbostock/d3).
 
 Thanks for reading! If you have any comments, let me know [@bburwell](https://twitter.com/bburwell).
 
