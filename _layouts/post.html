@@ -17,19 +17,18 @@ layout: master
   <div class="split">
     {% if page.previous %}
     <div class="left align-left sans">
-      <a href="{{ page.previous.url }}"><i class="fa fa-chevron-left"></i> Previous Post</a>
+      <a href="{{ page.previous.url }}"><i class="fa fa-chevron-left"></i> Older Post</a>
     </div>
     {% endif %}
 
     {% if page.next %}
     <div class="right align-right sans">
-      <a href="{{ page.next.url }}">Next Post <i class="fa fa-chevron-right"></i></a>
+      <a href="{{ page.next.url }}">Newer Post <i class="fa fa-chevron-right"></i></a>
     </div>
     {% endif %}
   </div>
 
   <div class="center">
-    <!-- <p>you may also enjoy&hellip;</p> -->
     {% for post in site.related_posts limit:3 %}
     <p class="sans"><a href="{{ post.url }}">{{ post.title }}</a></p>
     {% endfor %}
