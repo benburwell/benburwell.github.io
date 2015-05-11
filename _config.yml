@@ -1,6 +1,5 @@
 # Config options
-markdown: redcarpet
-# highlighter: pygments
+markdown: kramdown
 sass:
     style: :compressed
     sass_dir: _sass
@@ -8,7 +7,6 @@ permalink: /posts/:title/
 gems:
     - jekyll-redirect-from
 timezone: America/New_York
-# lsi: true
 
 # Site-level data
 name: Ben Burwell
