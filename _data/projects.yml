@@ -16,13 +16,13 @@
   github: "benburwell/weather"
   live: "http://weather.benburwell.com/"
 
-- name: "Printer Management System"
+- name: "Printer Management"
   description: "In Software Engineering class, my team created a printer monitoring platform called Forest to gather and display statistics about network printers. See my blog post about it for more details!"
   tech: "Ruby, PHP, Node.js, MongoDB"
   github: "printerSystemCSI210"
   live: "/posts/forest-printer-management/"
 
-- name: "Article Management Interface"
+- name: "Newspaper Publishing"
   description: "A web application I created for my high school newspaper to help manage the publishing workflow. Routes articles through the editorial cycle and tracks them from first upload by author through publication."
   tech: "PHP, JavaScript, CSS, MySQL"
   github: "benburwell/ami"
