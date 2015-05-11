@@ -12,13 +12,16 @@ description: Projects I’ve done.
     {% else %}
       {{ project.name }}
     {% endif %}
-    <small class="light-gray monospace">{{ project.tech }}</small>
+    <small class="light-gray">{{ project.tech }}</small>
   </h1>
 
   <p>
     {{ project.description }}
     {% if project.github %}
-      <a style="display:inline-block;margin-left:1rem;" href="https://github.com/{{ project.github }}"><i class="fa fa-github"></i> Read the code</a>
+      <a style="display:inline-block;margin-left:1rem;" href="https://github.com/{{ project.github }}">
+        <i class="fa fa-github"></i>
+        Read the code
+      </a>
     {% endif %}
   </p>
 
