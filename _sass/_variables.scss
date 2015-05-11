@@ -1,13 +1,11 @@
 // Colors
-$teal: #00819C;
-$gray: darken(desaturate($teal, 100%), 10%);
-$light-gray: lighten($gray, 30%);
+$teal: #00819B;
+$gray: #40434E;
+$light-gray: lighten($gray, 21%);
 $highlight: #ffd;
+$white: #fff;
 
 // Fonts
 $sans: 'open_sans', sans-serif;
-$serif: 'crimson_text', serif;
+$serif: 'merriweather', serif;
 $monospace: 'source_code_pro', monospace;
-
-// Layout
-$container-width: 900px;

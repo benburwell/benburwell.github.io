@@ -1,3 +1,4 @@
+// Open Sans
 @font-face {
     font-family: 'open_sans';
     src: url('/assets/fonts/OpenSans-Light.eot');
@@ -7,29 +8,33 @@
     font-style: normal;
 }
 
-@font-face {
-    font-family: 'crimson_text';
-    src: url('/assets/fonts/crimsontext-regular.eot');
-    src: url('/assets/fonts/crimsontext-regular.woff') format('woff'),
-        url('/assets/fonts/crimsontext-regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'crimson_text';
-    src: url('/assets/fonts/crimsontext-italic.eot');
-    src: url('/assets/fonts/crimsontext-italic.woff') format('woff'),
-        url('/assets/fonts/crimsontext-italic.ttf') format('truetype');
-    font-weight: normal;
-    font-style: italic;
-}
-
+// Source Code Pro
 @font-face {
     font-family: 'source_code_pro';
     src: url('/assets/fonts/sourcecodepro-regular.eot');
     src: url('/assets/fonts/sourcecodepro-regular.woff') format('woff'),
         url('/assets/fonts/sourcecodepro-regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+// Merriweather
+@font-face {
+    font-family: 'merriweather';
+    src: url('/assets/fonts/merriweather-italic-webfont.eot');
+    src: url('/assets/fonts/merriweather-italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/assets/fonts/merriweather-italic-webfont.woff') format('woff'),
+         url('/assets/fonts/merriweather-italic-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'merriweather';
+    src: url('/assets/fonts/merriweather-regular-webfont.eot');
+    src: url('/assets/fonts/merriweather-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/assets/fonts/merriweather-regular-webfont.woff') format('woff'),
+         url('/assets/fonts/merriweather-regular-webfont.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
