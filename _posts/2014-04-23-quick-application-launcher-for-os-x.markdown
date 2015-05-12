@@ -9,6 +9,8 @@ redirect_from: "/writing/quick-application-launcher-for-os-x/"
 
 I’ve been using [Alfred][] for some time now as an application launcher. If you’re not familiar with application launchers such as Alfred, it’s essentially Spotlight supercharged. It can find and launch applications, open files, perform custom web searches, even shut down your computer for you — all from commands you type in.
 
+<!--more-->
+
 Like many other aspects of Alfred, it has highly customizable settings for the key combination used to activate it. For a long time, I used a double-tap of the Option key, but I felt as though there must be a better solution. Inspired by the Google’s decision to replace the traditional Caps Lock key with a “Search” key on the Chromebook, I started poking around on the web.
 
 Enter [PCKeyboardHack][].

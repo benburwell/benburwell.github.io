@@ -7,9 +7,9 @@ date: 2014-05-01 00:00:00
 redirect_from: "/writing/migrating-to-github-pages-and-jekyll/"
 ---
 
-## Background
-
 I’ve always been a fan of using [Markdown](http://daringfireball.net/projects/markdown/) to create web content. Several years ago, I created [MDEngine](/projects/mdengine/), a small PHP script to render Markdown files in HTML dynamically. For a while, it was responsible for much of the content on my website. In October 2013, I began work on a fresh design. I decided to use a custom Node.js app deployed on Heroku for processing the Markdown. While this worked effectively, I always had some reservations.
+
+<!--more-->
 
 While my site was decently fast, there was no real reason that it needed to be dynamically generated. I was particularly concerned with the performance of the two list pages, whose backend logic consisted of parsing an entire directory of Markdown files each time it was loaded. Though there was no noticeable performance impact, it was not inconceivable that the page generation time would increase substantially as content grew.
 

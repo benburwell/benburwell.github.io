@@ -9,6 +9,8 @@ redirect_from: "/writing/mobile-design-paradigm/"
 
 When iOS was first introduced, it was filled with beautiful, glossy icons with shadowing and reflections. However, there’s been a shift in the UI design as the operating system has matured.
 
+<!--more-->
+
 The glass effect does not have to be built into icons, it appears there by default. Perhaps wisely, Apple elected to make the glass effect optional though, by use of a setting when bundling a new app. This resulted in many third-party developers building their own icons pixel for pixel and choosing not to apply the glass effect. Now, icons that do use the glass effect seem far outnumbered by those that don’t.
 
 When I installed the new Gmail app on my iPhone, I was struck by the beauty of the UI. It embodies the shift we’ve seen in icon design in its large, clean buttons and general lack of three-dimensionality. It transforms the device from a faux-3D space to a planar surface that you can interact with.

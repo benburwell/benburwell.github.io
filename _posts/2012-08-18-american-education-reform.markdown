@@ -9,6 +9,8 @@ redirect_from: "/writing/american-education-reform/"
 
 This was going to be a snarky piece on how good typographic practice is rarely found outside of the professional realm, but nobody would want to read that. Except, perhaps, for other typography nerds. And that is part of what I have to say. But a small part.
 
+<!--more-->
+
 Our public education system has declined in effectiveness to the point of being nearly worthless. The basic subjects — writing, reading, arithmetic, history, and geography — have remained static for a century while the world around us has changed immensely.
 
 It is time to introduce new subjects into the basic collection that every child learns. We must teach electronics, robotics, and programming starting early on. It is absolutely essential that every child have some basic understanding of these in the modern world. (There is research to suggest that POGIL may be especially relevant and effective in STEM education.) We must expand our education in the arts and music, inspiring creativity and aesthetic sensibilities.

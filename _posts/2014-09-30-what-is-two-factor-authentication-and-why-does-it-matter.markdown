@@ -10,6 +10,8 @@ redirect_from: "/writing/what-is-two-factor-authentication-and-why-does-it-matte
 
 With subversions of the security measures of cloud-based services on the rise, many service providers are implementing a strategy known as multi-factor authentication or simply educating their users about the implementations they’ve had for years.
 
+<!--more-->
+
 So what exactly is it? While logging in to an account usually only requires you to enter the proper password, two-factor authentication, or 2FA for short, relies on multiple different ways of proving your identity. In general, the three types of identification are _knowledge_ (something you know), _posession_ (something you have), and _inherence_ (something you are). Typical 2FA schemas require the presentation of two of these “factors” in order to authenticate.
 
 The knowledge factor is the most popularly understood and includes passwords or passphrases, PINs, and secret patterns. Essentially, 2FA is an authentication scheme that combats the multitude of ways an attacker might gain your password by introducing another — usually posession — factor. It’s easy to imagine a scenario in which your password could be compromised, whether it’s an attacker brute-force guessing, using the same password for multiple purposes, social engineering attacks such as phishing, or any other means. However, it is unlikely that any of these attackers who gain access to your password will be in sufficient physical proximity to steal or even just see your access token.

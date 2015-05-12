@@ -8,6 +8,8 @@ date: 2015-01-16 00:00:00
 
 One of my pet peeves in website usability design is forcing people to create unnecessary accounts. My recent purchase of some concert tickets from [Ticketfly](https://www.ticketfly.com) required me to make an account to buy them. For people who buy a lot of concert tickets, having an account may make a lot of sense. But for me, as someone who buys concert tickets at most once every year or two, having an account on a site that I will probably only use once is not only unnecessary, it's annoying.
 
+<!--more-->
+
 This is not to say that you shouldn't offer accounts; that would be ridiculous (depending on the type of site you are running, of course). However, in general, your users know far better than you do whether or not they actually want or will use an account. Forcing them to create an account will only drive them away. People don't like creating accounts they don't want to have. There's really no reason you can't have a "check out as guest" option.
 
 And if you do offer accounts, here are a couple of rules to follow to ensure a good user experience:

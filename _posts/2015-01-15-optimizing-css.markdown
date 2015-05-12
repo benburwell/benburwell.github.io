@@ -8,6 +8,8 @@ date: 2015-01-15 00:00:00
 
 There are probably a lot of ways that you can significantly speed up your page load times by taking a look at your CSS. Here are a couple of places to start looking.
 
+<!--more-->
+
 ## Remove unused CSS rules
 
 Using frontend boilerplate like [Bootstrap](http://getbootstrap.com) for CSS or a grid system can be really helpful for prototyping pages quickly. However, in production, it's important to remove CSS rules that are not in use in order to optimize your page load times and rendering speed.

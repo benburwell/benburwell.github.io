@@ -10,6 +10,8 @@ redirect_from: "/writing/configuring-cloudflare-universal-ssl/"
 
 On September 29, 2014, [CloudFlare](https://www.cloudflare.com/), a web security company and CDN provider, [announced](http://blog.cloudflare.com/introducing-universal-ssl/) that they would begin offering free, automatic SSL to all its customers (including those on their free plan). This is an enormous step forward for enhancing security and privacy on the Internet; while website owners would previously need to purchase an SSL certificate for their site and often pay extra for SSL hosting, CloudFlare now makes this all free. Plus, you get the benefits of their other services such as DDoS protection.
 
+<!--more-->
+
 I’ve previously written about [hosting static sites with GitHub Pages](https://www.benburwell.com/writing/migrating-to-github-pages-and-jekyll/), which is what I use for www.benburwell.com. GitHub provides SSL hosting for its static sites, but not with custom domain names (e.g. `https://example.github.io` but `http://example.com`). Using CloudFlare, it’s possible to use `https://example.com` for free. And as a bonus, you won’t need to worry about DNS hosting either.
 
 What is CloudFlare?

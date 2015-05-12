@@ -5,7 +5,7 @@ layout: master
 <article itemscope itemtype="http://schema.org/BlogPosting" class="article">
     <header>
         <h1 itemprop="headline">{{ page.title }}</h1>
-        <p><time itemprop="datePublished">{{ page.date | date: "%A, %-d %B %Y" }}</time></p>
+        <p><time datetime="{{ post.date | date: '%Y-%m-%d' }}" itemprop="datePublished">{{ page.date | date: "%A, %-d %B %Y" }}</time></p>
     </header>
 
     <div itemprop="articleBody">

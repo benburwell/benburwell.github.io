@@ -7,6 +7,8 @@ date: 2013-12-13 00:00:00
 
 Those who believe the web should be made more beautiful will appreciate this extension for Safari and Google Chrome that makes all text display in Helvetica Neue (with regular old Helvetica as a backup).
 
+<!--more-->
+
 Installing Helvetica in Safari
 ------------------------------
 

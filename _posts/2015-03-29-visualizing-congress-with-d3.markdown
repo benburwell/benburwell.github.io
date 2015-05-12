@@ -6,21 +6,25 @@ category: writing
 date: 2015-03-29 00:00:00
 ---
 
-<style>
-.d3container {
-  width: 100%;
-  margin-top: 2em;
-  margin-bottom: 2em;
-}
-</style>
+<div>
+  <style scoped>
+  .d3container {
+    width: 100%;
+    margin-top: 2em;
+    margin-bottom: 2em;
+  }
+  </style>
+</div>
 
 I've been wanting to learn [D3.js](http://d3js.org/) for a while now, so I decided to create some visualizations of the United States Congress, inspired by Neil deGrasse Tyson:
 
 <div class="center">
-<img src="/assets/images/vis_ndgt0.jpg">
-<img src="/assets/images/vis_ndgt1.jpg"><br>
-<img src="/assets/images/vis_ndgt2.jpg"><br>
+  <img alt="What profession do all of these senators and congressmen have?" src="/assets/images/vis_ndgt0.jpg">
+  <img alt="Law, law, law, law, business man, law, law, law..." src="/assets/images/vis_ndgt1.jpg"><br>
+  <img alt="Where are the scientists? Where are the engineers? Where's the rest of... life?" src="/assets/images/vis_ndgt2.jpg"><br>
 </div>
+
+<!--more-->
 
 It wasn't hard to find some [open-source Congress data](https://github.com/unitedstates/congress-legislators), and converting the [YAML](https://github.com/unitedstates/congress-legislators/blob/master/legislators-current.yaml) to [JSON](/assets/data/legislators-current.json) was [practically a one-liner in Ruby](https://gist.github.com/benburwell/20e76f70645c8003b088#file-yaml-to-json-rb). Armed with my trusty JSON data, I set off to learn the basics of D3.
 

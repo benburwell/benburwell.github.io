@@ -8,7 +8,8 @@ redirect_from: /writing/
 <section>
     {% for post in site.posts %}
         <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
-        <p><time>{{ post.date | date: "%A, %-d %B %Y" }}</time></p>
-        {{ post.content }}
+        <p><time datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: "%A, %-d %B %Y" }}</time></p>
+        {{ post.excerpt }}
+        <p><a href="{{ post.url }}">Continue reading <i class="fa fa-chevron-right"></i></a></p>
     {% endfor %}
 </section>

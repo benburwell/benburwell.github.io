@@ -14,6 +14,8 @@ Here's the situation I recently found myself in:
 * LUKS encrypted filesystem (known passphrase)
 * Physical access to the computer
 
+<!--more-->
+
 I needed to reset my account password. Normally, with physical access to a machine, all bets are off when it comes to security. I tried booting up the machine into [recovery mode](https://wiki.ubuntu.com/RecoveryMode) by holding down <kbd>shift</kbd> as soon as the BIOS had finished loading. But when I selected the "Drop to root shell" option, I was prompted to enter the unknown root password.
 
 My second approach was to boot into single user mode by editing the GRUB command script.
