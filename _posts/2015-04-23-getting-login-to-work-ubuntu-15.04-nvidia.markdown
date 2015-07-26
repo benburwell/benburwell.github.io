@@ -15,12 +15,6 @@ By entering <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>F3</kbd>, I was able to drop
 
 In the same shell, I ran:
 
-```
-$ wget http://us.download.nvidia.com/XFree86/\
-  Linux-x86_64/349.16/NVIDIA-Linux-x86_64-349.16.run
-$ chmod u+x NVIDIA-Linux-x86_64-349.16.run
-$ sudo service lightdm stop
-$ sudo ./NVIDIA-Linux-x86_64-349.16.run
-```
+{% gist 7efcf98bd1d76170c19e %}
 
 After that, restarting my computer cleared up the issue.

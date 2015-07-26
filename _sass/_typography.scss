@@ -30,6 +30,10 @@ pre, code, kbd {
   color: $gray;
 }
 
+pre, code {
+  white-space: pre;
+}
+
 p {
   margin-top: 1rem;
   margin-bottom: 1rem;
