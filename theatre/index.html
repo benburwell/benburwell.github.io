@@ -6,13 +6,13 @@ description: Mostly for my own reference, here’s a list of shows I’ve worked
 
 <h1>Theatrical Credits</h1>
 
-<table class="data-table">
-    {% for show in site.data.shows %}
-    <tr>
-        <td><i>{{ show.name }}</i></td>
-        <td>{{ show.role }}</td>
-        <td>{{ show.person }}</td>
-        <td class="right">{{ show.date }}</td>
-    </tr>
-    {% endfor %}
+<table class="fancy-table">
+  {% for show in site.data.shows %}
+  <tr>
+    <td><i>{{ show.name }}</i></td>
+    <td>{{ show.role }}</td>
+    <td>{{ show.person }}</td>
+    <td class="text-right">{{ show.date }}</td>
+  </tr>
+  {% endfor %}
 </table>

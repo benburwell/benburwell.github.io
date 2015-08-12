@@ -5,24 +5,19 @@ description: Projects I’ve done.
 ---
 
 {% for project in site.data.projects %}
-
   <h1>
     {% if project.live %}
       <a href="{{ project.live }}" target="_blank">{{ project.name }}</a>
     {% else %}
       {{ project.name }}
     {% endif %}
-    <small class="light-gray">{{ project.tech }}</small>
   </h1>
-
-  <p>
-    {{ project.description }}
+  <p class="muted sans">
+    {{ project.tech }}
     {% if project.github %}
-      <a style="display:inline-block;margin-left:1rem;" href="https://github.com/{{ project.github }}">
-        <i class="fa fa-github"></i>
-        Read the code
-      </a>
+      &bull;
+      <a href="https://github.com/{{ project.github }}"><i class="fa fa-github"></i> {{ project.github }}</a>
     {% endif %}
   </p>
-
+  <p>{{ project.description }}</p>
 {% endfor %}

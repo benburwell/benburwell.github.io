@@ -2,29 +2,28 @@
 layout: master
 title: Ben Burwell - Software Engineer
 ---
-<section class="about split">
-  <div class="left">
-    <pre>{
-  "<em>name</em>": "<em>Ben Burwell</em>",
-  "<em>location</em>": "<em>Allentown, PA</em>",
-  "<em>twitter</em>": "<a href="https://twitter.com/bburwell">@bburwell</a>",
-  "<em>github</em>": "<a href="https://github.com/benburwell">@benburwell</a>",
-  "<em>keybase</em>": "<a href="https://keybase.io/benburwell">@benburwell</a>",
-  "<em>email</em>": "<a href="mailto:ben@benburwell.com">ben@benburwell.com</a>",
-  "<em>pgp</em>": "<a href="https://keybase.io/benburwell/key.asc">6661 12D9 67A3 6ECD</a>",
-  "<em>resume</em>": "<a href="/assets/pdf/Ben_Burwell_Resume.pdf">resume.pdf</a>"
+
+<div class="one-half column">
+  <pre>{
+  "name": "Ben Burwell",
+  "location": "Allentown, PA",
+  "twitter": "<a href="https://twitter.com/bburwell">@bburwell</a>",
+  "github": "<a href="https://github.com/benburwell">@benburwell</a>",
+  "keybase": "<a href="https://keybase.io/benburwell">@benburwell</a>",
+  "email": "<a href="mailto:ben@benburwell.com">ben@benburwell.com</a>",
+  "pgp": "<a href="https://keybase.io/benburwell/key.asc">6661 12D9 67A3 6ECD</a>",
+  "resume": "<a href="/assets/pdf/Ben_Burwell_Resume.pdf">resume.pdf</a>"
 }</pre>
-  </div>
+</div>
 
-  <div class="right">
-    <h2>Recent Posts</h2>
-    <ul class="compressed-list">
-      {% for post in site.posts limit:3 %}
-      <li><a href="{{ post.url }}">{{ post.title }}</a></li>
-      {% endfor %}
-    </ul>
+<div class="one-half column">
+  <h2>Recent Posts</h2>
+  <ul>
+    {% for post in site.posts limit:3 %}
+    <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+    {% endfor %}
+  </ul>
 
-    <h2>About</h2>
-    <p>I am a software engineer and <a href="/theatre/">lighting designer</a>. I’m passionate about kerning, coffee, and the <a href="https://en.wikipedia.org/wiki/Unix_philosophy" target="_blank">UNIX philosophy</a>.</p>
-  </div>
-</section>
+  <h2>About</h2>
+  <p>I am a software engineer and <a href="/theatre/">lighting designer</a>. I’m passionate about kerning, coffee, and the <a href="https://en.wikipedia.org/wiki/Unix_philosophy" target="_blank">UNIX philosophy</a>.</p>
+</div>
