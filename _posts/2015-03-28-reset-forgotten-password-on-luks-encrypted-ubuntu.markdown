@@ -20,7 +20,7 @@ I needed to reset my account password. Normally, with physical access to a machi
 
 My second approach was to boot into single user mode by editing the GRUB command script.
 
-<div class="center"><a href="/assets/images/ubuntu-grub.png"><img src="/assets/images/ubuntu-grub.png" alt="Ubuntu's GRUB menu"></a></div>
+<div class="text-center"><a href="/assets/images/ubuntu-grub.png"><img src="/assets/images/ubuntu-grub.png" alt="Ubuntu's GRUB menu"></a></div>
 
 By going down to the recovery mode option and hitting <kbd>e</kbd>, you can edit the GRUB commands. By adding <code>init=/bin/bash</code> at the end of the line beginning with <code>linux</code> that specifies the boot image, you can specify an initial shell to use. Then I hit <kbd>F10</kbd> to boot.
 

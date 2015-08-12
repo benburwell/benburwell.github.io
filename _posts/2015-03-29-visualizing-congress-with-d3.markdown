@@ -18,7 +18,7 @@ date: 2015-03-29 00:00:00
 
 I've been wanting to learn [D3.js](http://d3js.org/) for a while now, so I decided to create some visualizations of the United States Congress, inspired by Neil deGrasse Tyson:
 
-<div class="center">
+<div class="text-center">
   <img alt="What profession do all of these senators and congressmen have?" src="/assets/images/vis_ndgt0.jpg">
   <img alt="Law, law, law, law, business man, law, law, law..." src="/assets/images/vis_ndgt1.jpg"><br>
   <img alt="Where are the scientists? Where are the engineers? Where's the rest of... life?" src="/assets/images/vis_ndgt2.jpg"><br>
