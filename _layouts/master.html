@@ -2,20 +2,12 @@
 <html lang="en">
   <head>
     <title>{{ page.title }}</title>
-
     <meta charset="UTF-8">
-
     <style type="text/css">
-        {% capture fonts %}
-            {% include fonts.scss %}
-        {% endcapture %}
-        {{ fonts | scssify }}
+        {% capture tiny %}{% include tiny.scss %}{% endcapture %}
+        {{ tiny | scssify }}
     </style>
-
-    <link rel="stylesheet" type="text/css" href="/assets/stylesheets/site.css">
-
     <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
-
     <link rel="shortcut icon" href="/assets/images/icons/favicon.ico" sizes="128x128">
     <link rel="apple-touch-icon" href="/assets/images/icons/apple/apple-touch-icon-57x57.png" sizes="57x57">
     <link rel="apple-touch-icon" href="/assets/images/icons/apple/apple-touch-icon-72x72.png" sizes="72x72">
@@ -24,7 +16,6 @@
     <link rel="apple-touch-icon" href="/assets/images/icons/apple/apple-touch-icon-120x120.png" sizes="120x120">
     <link rel="apple-touch-icon" href="/assets/images/icons/apple/apple-touch-icon-144x144.png" sizes="144x144">
     <link rel="apple-touch-icon" href="/assets/images/icons/apple/apple-touch-icon-152x152.png" sizes="152x152">
-
     <meta name="author" content="Ben Burwell">
     {% if page.description %}
     <meta name="description" content="{{ page.description }}">
@@ -32,7 +23,6 @@
     <meta name="description" content="{{ site.description }}">
     {% endif %}
     <meta name="keywords" content="{{ site.keywords | join: ',' }}">
-
     <meta property="og:title" content="{{ page.title }}">
     <meta property="og:site_name" content="Ben Burwell">
     {% if page.description %}
@@ -49,7 +39,6 @@
     <meta property="og:url" content="http%3A%2F%2Fwww.benburwell.com{{ page.url | cgi_escape }}">
     <meta property="article:author" content="Ben Burwell">
     <meta property="fb:admins" content="1439777397">
-
     <meta name="twitter:card" content="summary">
     <meta name="twitter:site" content="@bburwell">
     <meta name="twitter:title" content="{{ page.title }}">
@@ -65,29 +54,36 @@
     <meta name="twitter:image:src" content="http://www.benburwell.com/assets/images/icons/benburwell.png">
     {% endif %}
     <meta name="twitter:domain" content="BenBurwell.com">
-
     {% if page.chrome-webstore-item %}
     <link rel="chrome-webstore-item" href="https://chrome.google.com/webstore/detail/{{ page.chrome-webstore-item }}">
     {% endif %}
   </head>
   <body>
-    <header class="top-header print-hide">
-      <div class="social-icons" style="float:right;">
-        <a href="https://github.com/benburwell"><i class="fa fa-2x fa-github"></i></a>
-        <a href="https://twitter.com/bburwell"><i class="fa fa-2x fa-twitter"></i></a>
+    <header class="main-header">
+      <div class="container">
+        <nav class="single-column">
+          <div class="centered">
+            <a href="/"><i class="fa fa-lg fa-home"></i> Home</a>
+            <a href="/posts/"><i class="fa fa-lg fa-pencil"></i> Posts</a>
+            <a href="/projects/"><i class="fa fa-lg fa-code"></i> Projects</a>
+            <a href="https://github.com/benburwell"><i class="fa fa-lg fa-github"></i> GitHub</a>
+            <a href="https://twitter.com/bburwell"><i class="fa fa-lg fa-twitter"></i> Twitter</a>
+          </div>
+        </nav>
       </div>
-      <nav>
-        <a class="" href="/">benburwell.com</a>
-        <a class="posts" href="/posts/">/posts</a>
-        <a class="projects" href="/projects/">/projects</a>
-      </nav>
     </header>
-    <main>
-      {{ content }}
-    </main>
-    <footer class="print-hide">
-      <div class="light-gray"><a href="/license/">&copy; 2015</a> &bull; <a href="/privacy/">Privacy</a></div>
-    </footer>
+    <div class="container">
+      <main class="columns">
+        {{ content }}
+      </main>
+      <footer class="columns">
+        <p class="text-center muted sans">
+          <small>
+            <a href="/license/">&copy; 2015</a> &bull; <a class="muted-link" href="/privacy/">Privacy</a>
+          </small>
+        </p>
+      </footer>
+    </div>
     <script async src="/assets/scripts/metrics.js"></script>
   </body>
 </html>

@@ -1,0 +1,39 @@
+// Layout
+.centered {
+  display: block;
+  float: none;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+// Text alignment
+.text-right { text-align: right; }
+.text-left { text-align: left; }
+.text-center { text-align: center; }
+
+.sans {
+  font-family: $sans;
+}
+
+.muted {
+  color: $muted-color;
+  a {
+    color: $muted-color;
+    &:active,
+    &:hover {
+      color: $alternate-color;
+    }
+  }
+}
+
+.fancy-table {
+  font-family: $sans;
+  font-size: 80%;
+  td {
+    padding: 7px;
+  }
+
+  tbody tr:nth-child(even) {
+    background-color: #eee;
+  }
+}
