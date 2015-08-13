@@ -1,6 +1,6 @@
 // Fixed-width, centered column for site content.
 .container {
-  width: $container-width;
+  width: 100%;
   margin-right: auto;
   margin-left: auto;
   @include clearfix;
@@ -26,32 +26,12 @@
 
 // Column widths
 .one-third {
-  width: 33.333333%;
+  width: 100%;
 }
-
-// .two-thirds {
-//   width: 66.666667%;
-// }
-
-// .one-fourth {
-//   width: 25%;
-// }
 
 .one-half {
-  width: 50%;
+  width: 100%;
 }
-
-// .three-fourths {
-//   width: 75%;
-// }
-
-// .one-fifth {
-//   width: 20%;
-// }
-
-// .four-fifths {
-//   width: 80%;
-// }
 
 // Single column hack
 .single-column {
@@ -67,3 +47,33 @@
 //   padding-left: $grid-gutter;
 //   vertical-align: top;
 // }
+
+// For medium screens
+@media (min-width: $container-width / 2) and (max-width: $container-width - 1) {
+  .container {
+    width: $container-width / 2;
+  }
+
+  .one-half {
+    width: 100%;
+  }
+
+  .one-third {
+    width: 33.333333%;
+  }
+}
+
+// For large screens
+@media (min-width: $container-width) {
+  .container {
+    width: $container-width;
+  }
+
+  .one-half {
+    width: 50%;
+  }
+
+  .one-third {
+    width: 33.333333%;
+  }
+}

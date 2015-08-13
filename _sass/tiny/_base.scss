@@ -52,7 +52,8 @@ blockquote {
   @include gradient(lighten($brand-color, 3%), darken($brand-color, 3%));
   a {
     color: white;
-    padding: 15px;
+    padding: 5px 15px;
+    display: inline-block;
 
     &:active,
     &:hover {
