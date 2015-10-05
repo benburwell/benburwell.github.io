@@ -12,8 +12,8 @@
 // padding on `.column`s with negative margin for alignment.
 
 .columns {
-  margin-right: -$grid-gutter;
-  margin-left: -$grid-gutter;
+  margin-right: $grid-gutter;
+  margin-left: $grid-gutter;
   @include clearfix;
 }
 
@@ -48,25 +48,15 @@
 //   vertical-align: top;
 // }
 
-// For medium screens
-@media (min-width: $container-width / 2) and (max-width: $container-width - 1) {
-  .container {
-    width: $container-width / 2;
-  }
-
-  .one-half {
-    width: 100%;
-  }
-
-  .one-third {
-    width: 33.333333%;
-  }
-}
-
 // For large screens
-@media (min-width: $container-width) {
+@media (min-width: $container-width + 6*$grid-gutter) {
   .container {
     width: $container-width;
+  }
+
+  .columns {
+    margin-right: -$grid-gutter;
+    margin-left: -$grid-gutter;
   }
 
   .one-half {
