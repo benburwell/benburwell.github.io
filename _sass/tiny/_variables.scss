@@ -4,8 +4,8 @@ $muted-color: desaturate($brand-color, 100%);
 $base-color: #222;
 
 $base-font-size: 20px;
-$sans: 'open_sans', Helvetica, arial, nimbussansl, liberationsans, freesans, clean, sans-serif;
-$serif: 'merriweather_light';
+$sans: 'open_sans', sans-serif;
+$serif: 'merriweather_light', serif;
 $monospace: Consolas, "Liberation Mono", Menlo, Courier, monospace !default;
 
 $container-width: 900px;
