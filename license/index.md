@@ -1,5 +1,5 @@
 ---
-layout: master
+layout: blog
 title: BenBurwell.com License
 ---
 
