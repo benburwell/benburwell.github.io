@@ -28,7 +28,7 @@ After waiting for about 30 seconds or a minute, I saw a message that waiting for
 
 Next, I mounted the freshly-unlocked disk with <code>mount -o rw /dev/sda3 /root</code>, taking advantage of the pre-existing empty directory. From there, I used <code>chroot</code> to run <code>passwd</code> in the OS.
 
-{% highlight shell %}
+{% highlight bash %}
 $ chroot /root passwd
 $ chroot /root passwd myUserName
 {% endhighlight %}
