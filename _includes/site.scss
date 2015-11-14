@@ -1,16 +1,14 @@
 $brand-color: #00819B;
-$alternate-color: adjust-hue($brand-color, -120);
 $muted-color: lighten(desaturate($brand-color, 100%), 15%);
 $base-color: #222;
 
 $base-font-size: 20px;
 $line-height: $base-font-size * 1.5;
-$serif: merriweather_light;
+$serif: merriweather_light, serif;
 $monospace: Consolas, "Liberation Mono", Menlo, Courier, monospace !default;
 $sans: "Helvetica Neue", "Helvetica", "Arial", "Liberation Sans", sans-serif;
 
 $container-width: 900px;
-$grid-gutter: 10px;
 
 @import "fonts";
 @import "icons";
@@ -36,7 +34,7 @@ body {
 }
 
 main {
-  max-width: 900px;
+  max-width: $container-width;
   margin-left: auto;
   margin-right: auto;
 }
@@ -157,7 +155,7 @@ time {
   display: block;
 }
 
-@media (min-width: 900px) {
+@media (min-width: $container-width) {
 .left {
   text-align: left;
   float: left;
