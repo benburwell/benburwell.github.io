@@ -1,47 +1,29 @@
 ---
-layout: master
+layout: blog
 ---
 
 <article itemscope itemtype="http://schema.org/BlogPosting">
-  <header>
-    <h1 itemprop="headline">{{ page.title }}</h1>
-    <p class="muted sans">
-      <span itemprop="author" itemscope itemtype="http://schema.org/Person">by
-        <span itemprop="name">Ben Burwell</span>
-      </span>
-      <a href="https://twitter.com/bburwell">@bburwell</a> &bull;
-      <time datetime="{{ post.date | date: '%Y-%m-%d' }}" itemprop="datePublished">{{ page.date | date: "%A, %-d %B %Y" }}</time>
-    </p>
-  </header>
+  <h1 itemprop="headline">{{ page.title }}</h1>
+  <p><time datetime="{{ post.date | date: '%Y-%m-%d' }}" itemprop="datePublished">{{ page.date | date: "%-d %B %Y" }}</time></p>
 
   <div itemprop="articleBody">
     {{ content }}
   </div>
 </article>
 
-<div class="columns">
-  <div class="one-third column">
-    <p class="text-left sans">
-      {% if page.previous %}
-      <a href="{{ page.previous.url }}"><i class="fa fa-lg fa-chevron-left"></i> Older Post</a>
-      {% endif %}
-    </p>
-  </div>
-  
-  <div class="one-third column text-center">
-    <p>
-      <a title="Share/Discuss on Hacker News" target="_blank" href="https://news.ycombinator.com/submitlink?u=http%3A%2F%2Fwww.benburwell.com{{ page.url | cgi_escape }}&amp;t={{ page.title }}"><i class="fa fa-2x fa-hacker-news"></i></a>
-      <a title="Share on Twitter" target="_blank" href="https://twitter.com/intent/tweet?text={{ page.title }}&amp;url=http%3A%2F%2Fwww.benburwell.com{{ page.url | cgi_escape }}"><i class="fa fa-2x fa-twitter-square"></i></a>
-      <a title="Share on Facebook" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwww.benburwell.com{{ page.url | cgi_escape }}"><i class="fa fa-2x fa-facebook-square"></i></a>
-      <a title="Share on Google+" target="_blank" href="https://plus.google.com/share?url=http%3A%2F%2Fwww.benburwell.com{{ page.url | cgi_escape }}&amp;t={{ page.title }}"><i class="fa fa-2x fa-google-plus-square"></i></a>
-    </p>
-  </div>
+<footer>
+  <p>
+    Share on:<br>
+    <a title="Share/Discuss on Hacker News" target="_blank" href="https://news.ycombinator.com/submitlink?u=http%3A%2F%2Fwww.benburwell.com{{ page.url | cgi_escape }}&amp;t={{ page.title }}"><i class="lg-icon icon-share-hacker-news"></i></a>
+    <a title="Share on Twitter" target="_blank" href="https://twitter.com/intent/tweet?text={{ page.title }}&amp;url=http%3A%2F%2Fwww.benburwell.com{{ page.url | cgi_escape }}"><i class="lg-icon icon-share-twitter"></i></a>
+    <a title="Share on Facebook" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwww.benburwell.com{{ page.url | cgi_escape }}"><i class="lg-icon icon-share-facebook"></i></a>
+    <a title="Share on Google+" target="_blank" href="https://plus.google.com/share?url=http%3A%2F%2Fwww.benburwell.com{{ page.url | cgi_escape }}&amp;t={{ page.title }}"><i class="lg-icon icon-share-gplus"></i></a>
+  </p>
 
-  <div class="one-third column">
-    <p class="text-right sans">
-      {% if page.next %}
-      <a href="{{ page.next.url }}">Newer Post <i class="fa fa-lg fa-chevron-right"></i></a>
-      {% endif %}
-    </p>
-  </div>
-</div>
+  <p>
+    Read more:<br>
+    {% for related in site.related_posts %}
+    <a href="{{ related.url }}">{{ related.title }}</a><br>
+    {% endfor %}
+  </p>
+</footer>

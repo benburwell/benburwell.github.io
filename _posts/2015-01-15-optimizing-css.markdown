@@ -30,6 +30,15 @@ On my site, I use a small stylesheet in the `<head>` to load my webfonts; this a
 
 If you're using Jekyll, you can pretty easily include a minified SCSS segment in your layouts. I keep my font stylesheet at `_includes/fonts.scss`, so I can use the following chunk of code to include the minified version:
 
-{% gist bbaea7d51dd9ab9afa15 %}
+{% highlight html %}
+{% raw %}
+<style type="text/css">
+  {% capture fonts %}
+    {% include fonts.scss %}
+  {% endcapture %}
+  {{ fonts | scssify }}
+</style>
+{% endraw %}
+{% endhighlight %}
 
 The minification is, of course, dependent on your `_config.yml`. You can [take a look at mine](https://github.com/benburwell/benburwell.github.io/blob/master/_config.yml) for reference.

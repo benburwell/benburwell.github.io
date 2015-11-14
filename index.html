@@ -3,27 +3,22 @@ layout: master
 title: Ben Burwell - Software Engineer
 ---
 
-<div class="one-half column">
+<div class="home">
   <pre>{
   "name": "Ben Burwell",
-  "location": "Allentown, PA",
-  "twitter": "<a href="https://twitter.com/bburwell">@bburwell</a>",
-  "github": "<a href="https://github.com/benburwell">@benburwell</a>",
-  "keybase": "<a href="https://keybase.io/benburwell">@benburwell</a>",
   "email": "<a href="mailto:ben@benburwell.com">ben@benburwell.com</a>",
   "pgp": "<a href="https://keybase.io/benburwell/key.asc">6661 12D9 67A3 6ECD</a>",
-  "resume": "<a href="/assets/pdf/Ben_Burwell_Resume.pdf">resume.pdf</a>"
+  "blog": "<a href="/posts/">/posts/</a>",
+  "projects": "<a href="/projects/">/projects/</a>",
+  "resume": "<a href="/resume.pdf">/resume.pdf</a>",
+  "github": "<a href="https://github.com/benburwell">@benburwell</a>",
+  "twitter": "<a href="https://twitter.com/bburwell">@bburwell</a>",
+  "likes": [
+    "<a href="https://en.wikipedia.org/wiki/Unix_philosophy">unix philosophy</a>",
+    "crypto",
+    "infosec",
+    "<a href="/theatre/">lighting design</a>"
+  ]
 }</pre>
 </div>
 
-<div class="one-half column">
-  <h2>Recent Posts</h2>
-  <ul>
-    {% for post in site.posts limit:3 %}
-    <li><a href="{{ post.url }}">{{ post.title }}</a></li>
-    {% endfor %}
-  </ul>
-
-  <h2>About</h2>
-  <p>I am a software engineer and <a href="/theatre/">lighting designer</a>. I’m passionate about kerning, coffee, and the <a href="https://en.wikipedia.org/wiki/Unix_philosophy" target="_blank">UNIX philosophy</a>.</p>
-</div>

@@ -4,10 +4,9 @@
     <title>{{ page.title }}</title>
     <meta charset="UTF-8">
     <style type="text/css">
-        {% capture tiny %}{% include tiny.scss %}{% endcapture %}
+        {% capture tiny %}{% include site.scss %}{% endcapture %}
         {{ tiny | scssify }}
     </style>
-    <link rel="stylesheet" type="text/css" href="/assets/stylesheets/fa-icons.css">
     <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
     <link rel="shortcut icon" href="/assets/images/icons/favicon.ico" sizes="128x128">
     <link rel="apple-touch-icon" href="/assets/images/icons/apple/apple-touch-icon-57x57.png" sizes="57x57">
@@ -60,31 +59,7 @@
     {% endif %}
   </head>
   <body>
-    <header class="main-header">
-      <div class="container">
-        <nav class="single-column">
-          <div class="centered">
-            <a href="/"><i class="fa fa-lg fa-home"></i> Home</a>
-            <a href="/posts/"><i class="fa fa-lg fa-pencil"></i> Posts</a>
-            <a href="/projects/"><i class="fa fa-lg fa-code"></i> Projects</a>
-            <a href="https://github.com/benburwell"><i class="fa fa-lg fa-github"></i> GitHub</a>
-            <a href="https://twitter.com/bburwell"><i class="fa fa-lg fa-twitter"></i> Twitter</a>
-          </div>
-        </nav>
-      </div>
-    </header>
-    <div class="container">
-      <main class="columns">
-        {{ content }}
-      </main>
-      <footer class="columns">
-        <p class="text-center muted sans">
-          <small>
-            <a href="/license/">&copy; 2015</a> &bull; <a class="muted-link" href="/privacy/">Privacy</a>
-          </small>
-        </p>
-      </footer>
-    </div>
+    {{ content }}
     <script async src="/assets/scripts/metrics.js"></script>
   </body>
 </html>

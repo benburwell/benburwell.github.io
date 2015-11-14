@@ -81,7 +81,6 @@
       .attr("y", barHeight / 2)
       .attr("dy", ".35em")
       .style("font-size", "15px")
-      .style("font-family", "open_sans")
       .text(function(d) { return d.name; });
 
     bar.append("text")
@@ -89,7 +88,6 @@
       .attr("y", barHeight / 2)
       .attr("dy", ".35em")
       .style("font-size", "15px")
-      .style("font-family", "open_sans")
       .style("fill", "white")
       .text(function(d) { return d.count; });
 
