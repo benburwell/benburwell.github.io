@@ -126,18 +126,9 @@ hr {
   margin-bottom: $base-font-size;
 }
 
-//a {
-//  background: linear-gradient(#fff, #fff), linear-gradient(#fff, #fff), linear-gradient($base-color, $base-color);
-//  background-size: 0.05em 1px, 0.05em 1px, 1px 1px;
-//  background-repeat: no-repeat, no-repeat, repeat-x;
-//  text-shadow: 0.03em 0 #fff, -0.03em 0 #fff, 0 0.03em #fff, 0 -0.03em #fff;
-//  background-position: 0% 93%, 100% 93%, 0% 93%;
-//}
-
 a, a * {
   color: $brand-color !important;
   &:hover {
-//    text-shadow: 0 0 2px $brand-color;
     color: darken($brand-color, 10%) !important;
   }
 }
