@@ -15,7 +15,7 @@ By entering <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>F3</kbd>, I was able to drop
 
 In the same shell, I ran:
 
-{% highlight shell %}
+{% highlight bash %}
 wget http://us.download.nvidia.com/XFree86/Linux-x86_64/349.16/NVIDIA-Linux-x86_64-349.16.run
 chmod u+x NVIDIA-Linux-x86_64-349.16.run
 sudo service lightdm stop

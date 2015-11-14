@@ -13,7 +13,7 @@ I recently wrote about [migrating my website to GitHub Pages](/writing/migrating
 
 Using [Git hooks](http://git-scm.com/book/en/Customizing-Git-Git-Hooks), it’s possible to run a script at certain points during the Git workflow. To take advantage of this in my case, I added a small bash script to `.git/hooks/pre-commit`:
 
-{% highlight shell %}
+{% highlight bash %}
 #!/bin/sh
 
 export PATH=/usr/local/bin:$PATH
