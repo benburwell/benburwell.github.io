@@ -22,6 +22,12 @@
   github: "printerSystemCSI210"
   live: "/posts/forest-printer-management/"
 
+- name: "Emergency Street Search"
+  description: "As an afternoon project, I decided to digitize the \"Red Book\" we use at the Pennington First Aid Squad that contains detailed directions and maps to all the streets in our district, enabling crews to quickly find the information they need when responding to calls."
+  tech: "JavaScript, jQuery"
+  github: "benburwell/streets"
+  live: "http://penningtonfirstaid.org/street_sop_doc/street_search.php"
+
 - name: "Newspaper Publishing"
   description: "A web application I created for my high school newspaper to help manage the publishing workflow. Routes articles through the editorial cycle and tracks them from first upload by author through publication."
   tech: "PHP, JavaScript, CSS, MySQL"
