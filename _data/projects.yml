@@ -48,6 +48,12 @@
   tech: "browser extension APIs"
   github: "benburwell/Helvetica"
 
+- name: "Zipserver"
+  description: "An incredibly simple JSON API for getting geolocation info from a ZIP code."
+  tech: "Go, Heroku"
+  github: "benburwell/zipserver"
+  live: "https://zipserver.benburwell.com/zip/18101"
+
 - name: "Resume"
   description: "Yup, that's right: I made my reume in LaTeX."
   tech: "LaTeX"
