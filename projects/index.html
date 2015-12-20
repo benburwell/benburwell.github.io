@@ -4,22 +4,22 @@ title: Ben Burwell’s Projects
 description: Projects I’ve done.
 ---
 
-<h1>Projects</h1>
+<h1>My Projects</h1>
 
 {% for project in site.data.projects %}
+<h2>
+  {% if project.live %}
+    <a href="{{ project.live }}" target="_blank">{{ project.name }}</a>
+  {% else %}
+    {{ project.name }}
+  {% endif %}
+</h2>
 <section>
-  <h2>
-    {% if project.live %}
-      <a href="{{ project.live }}" target="_blank">{{ project.name }}</a>
-    {% else %}
-      {{ project.name }}
-    {% endif %}
-  </h2>
   <p class="muted sans">
     {{ project.tech }}
     {% if project.github %}
       &bull;
-      <a href="https://github.com/{{ project.github }}"><i class="icon-github"></i>{{ project.github }}</a>
+      <a href="https://github.com/{{ project.github }}">{{ project.github }}</a>
     {% endif %}
   </p>
   <p>{{ project.description }}</p>

@@ -10,7 +10,7 @@ Today, I noticed that Facebook now has a place for you to list your PGP public k
 
 <!--more-->
 
-<p><a href="/assets/images/facebook_gpg.png"><img src="/assets/images/facebook_gpg.png" style="width:100%" alt="Facebook now gives the option to list your PGP public key"></a></p>
+<p><a href="/assets/images/facebook_gpg.png"><img src="/assets/images/facebook_gpg.png" style="max-width:100%" alt="Facebook now gives the option to list your PGP public key"></a></p>
 
 The mouseover help text states:
 
