@@ -102,6 +102,8 @@ li {
 }
 
 pre {
+  font-family: $monospace;
+  overflow: auto;
   margin: 1rem 0;
 }
 
@@ -172,10 +174,11 @@ aside {
   height: 100%;
   text-align: center;
   pre {
-    margin-top: 2em;
+    margin-top: 2rem;
     display: inline-block;
     text-align: left;
     line-height: 2rem;
+    overflow: auto;
   }
 }
 
