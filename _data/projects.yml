@@ -55,7 +55,7 @@
   live: "https://zipserver.benburwell.com/zip/18101"
 
 - name: "Resume"
-  description: "Yup, that's right: I made my reume in LaTeX."
+  description: "Yup, that's right: I made my resume in LaTeX."
   tech: "LaTeX"
   github: "benburwell/resume"
   live: "/assets/pdf/Ben_Burwell_Resume.pdf"
