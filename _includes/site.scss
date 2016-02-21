@@ -146,6 +146,10 @@ a {
   &:hover {
     color: $monokai-magenta;
   }
+  &:focus {
+    background-color: $monokai-blue;
+    color: $monokai-gray-0;
+  }
 }
 
 time {
