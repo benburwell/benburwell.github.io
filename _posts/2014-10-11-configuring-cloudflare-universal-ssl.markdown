@@ -29,11 +29,12 @@ To get started, head over to [CloudFlare](https://www.cloudflare.com/sign-up) an
 
 Next, head over to your registrar and and change your authoritative name servers to the ones listed in CloudFlare to start routing your traffic through their network. This will take some time to propagate through the DNS network, but should be effective within a few hours. In the meantime, you can take a look at the three Settings pages. There are many options for optimization, redirects, caching, security, and more. The important one is to go down to the SSL option and set it to Flexible SSL. Note that even though you can access your GitHub pages site over SSL, trying to do so with full SSL through CloudFlare will result in an “Unknown Site” error from GitHub.
 
-<hr>
-
-_Update on 22 May, 2015:_ Since this article was published, CloudFlare has [updated their dashboard](https://support.cloudflare.com/hc/en-us/articles/205075117-FAQ-New-CloudFlare-Dashboard). Now, the settings for SSL are located under the ["Crypto" tab](https://www.cloudflare.com/a/crypto) for your website. The Page Rules as described below are still configured the same way, but now found under the ["Page Rules" tab](https://www.cloudflare.com/a/page-rules).
-
-<hr>
+<aside>
+	<p>
+		<em>Update on 22 May, 2015:</em>
+		Since this article was published, CloudFlare has <a href="https://support.cloudflare.com/hc/en-us/articles/205075117-FAQ-New-CloudFlare-Dashboard">updated their dashboard</a>. Now, the settings for SSL are located under the <a href="https://www.cloudflare.com/a/crypto">"Crypto" tab</a> for your website. The page rules as described below are still configured the same way, but now found under the <a href="https://www.cloudflare.com/a/page-rules">"Page Rules" tab</a>.
+	</p>
+</aside>
 
 On the free tier, CloudFlare states that it will take up to 24 hours to provision the SSL certificate for your site. In my case, it only took a few hours. Using one of their paid plans will result in immediate provision. You can check in on whether the certificate has been provisioned by trying to navigate to https://yoursite.com. You’ll likely get a domain mismatch SSL error as CloudFlare defaults to a different certificate until yours has been provisioned. Once you stop receiving the error, you’re good to go!
 

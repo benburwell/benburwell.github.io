@@ -1,201 +1,194 @@
-$monokai-royal-blue: #204a87;
-$monokai-dark-blue: #243955;
-$monokai-gray-0: #272822;
-$monokai-gray-1: #31322c;
-$monokai-gray-2: #3c3d37;
-$monokai-forest: #46830c;
-$monokai-gray-3: #49483e;
-$monokai-gray-4: #64645e;
-$monokai-blue: #66d9ef;
-$monokai-tan: #75715e;
-$monokai-red: #8b0807;
-$monokai-gray-5: #90908a;
-$monokai-lime: #a6e22e;
-$monokai-violet: #ae81ff;
-$monokai-yellow: #e6db74;
-$monokai-light: #f8f8f0;
-$monokai-magenta: #f92672;
-$monokai-orange: #fd971f;
+$dark-gray: #444;
+$medium-gray: #888;
+$light-gray: #ddd;
+$primary-color: #FF6639;
+$link-color: #476AE0;
 
 $base-font-size: 22px;
 $monospace: Consolas, "Liberation Mono", Menlo, Courier, monospace !default;
 $container-width: 1200px;
 
 @mixin container {
-  max-width: $container-width;
-  padding: 0 1rem;
-  margin-left: auto;
-  margin-right: auto;
+	max-width: $container-width;
+	padding: 0 1rem;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .muted {
-  color: $monokai-gray-5;
+	color: $medium-gray;
 }
 
 body {
-  font-family: $monospace;
-  background-color: $monokai-gray-0;
-  color: $monokai-light;
-  font-size: $base-font-size;
-  padding: 5rem 0 0 0;
-  margin: 0;
+	font-family: $monospace;
+	color: $dark-gray;
+	font-size: $base-font-size;
+	padding: 5rem 0 0 0;
+	margin: 0;
 }
 
 header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 5rem;
-  padding: 0;
-  margin: 0;
-  text-align: center;
-  background-color: $monokai-gray-0;
-  box-shadow: 0 1rem 1rem $monokai-gray-0;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 5rem;
+	padding: 0;
+	margin: 0;
+	text-align: center;
+	background-color: rgba(255, 255, 255, 0.85);
+	z-index: 10;
+	border-bottom: 1px solid $light-gray;
 }
 
 footer {
-  @extend .muted;
-  padding: 2rem;
-  text-align: center;
+	@extend .muted;
+	padding: 2rem;
+	text-align: center;
 }
 
 section {
-  padding-left: 5rem;
+	padding-left: 5rem;
 }
 
 h1 {
-  @include container;
-  color: $monokai-orange;
-  font-size: 2rem;
-  font-weight: bold;
+	@include container;
+	color: $primary-color;
+	font-size: 2rem;
+	font-weight: bold;
 }
 
 h2 {
-  @include container;
-  color: $monokai-orange;
-  font-size: 1.5rem;
-  font-weight: bold;
+	@include container;
+	color: $primary-color;
+	font-size: 1.5rem;
+	font-weight: bold;
 }
 
 table {
-  width: 100%;
+	width: 100%;
 }
 
 td {
-  padding: 0.5rem;
+	padding: 0.5rem;
 }
 
 p {
-  @include container;
-  line-height: 2rem;
+	@include container;
+	line-height: 2rem;
 }
 
 ol, ul {
-  @include container;
+	@include container;
 }
 
 li {
-  margin-left: 2rem;
-  margin-right: 2rem;
-  padding: 1rem;
+	margin-left: 2rem;
+	margin-right: 2rem;
+	padding: 1rem;
 }
 
 pre {
-  font-family: $monospace;
-  overflow: auto;
-  margin: 1rem 0;
+	font-family: $monospace;
+	overflow: auto;
+	margin: 1rem 0;
 }
 
 kbd {
-  color: $monokai-lime;
+	color: $primary-color;
 }
 
 code {
-  color: $monokai-gray-5;
-  background-color: $monokai-gray-1;
+	color: $medium-gray;
 }
 
 hr {
-  border: none;
-  margin-top: $base-font-size;
-  margin-bottom: $base-font-size;
-  text-align: center;
-  &:after {
-    @extend .muted;
-    content: '~ ~ ~';
-  }
+	border: none;
+	margin-top: $base-font-size;
+	margin-bottom: $base-font-size;
+	text-align: center;
+	&:after {
+		@extend .muted;
+		content: '##';
+	}
 }
 
 .d3container {
-  text-align: center;
+	text-align: center;
 }
 
 blockquote {
-  font-style: italic;
-  p {
-    box-sizing: border-box;
-    border-left: 1rem solid $monokai-gray-1;
-    padding: 0 1rem;
-  }
+	font-style: italic;
+	p {
+		box-sizing: border-box;
+		padding: 0 3rem;
+	}
 }
 
 a {
-  color: $monokai-blue;
-  text-decoration: none;
-  &:hover {
-    color: $monokai-magenta;
-  }
-  &:focus {
-    background-color: $monokai-blue;
-    color: $monokai-gray-0;
-  }
+	color: $dark-gray;
+	text-decoration: underline;
+	&:hover {
+		color: $primary-color;
+	}
 }
 
 time {
-  @extend .muted;
+	@extend .muted;
 }
 
 aside {
-  @extend .muted;
+	@extend .muted;
+	@include container;
+	&:before {
+		display: block;
+		content: '/*';
+	}
+	&:after {
+		display: block;
+		white-space: pre;
+		content: ' */';
+	}
+	&>* {
+		margin-left: 1rem;
+	}
+	a {
+		color: $medium-gray;
+	}
 }
 
 .text-center {
-  text-align: center;
+	text-align: center;
 }
 
 .flex-justify {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
 }
 
 .home {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  pre {
-    margin-top: 2rem;
-    display: inline-block;
-    text-align: left;
-    line-height: 2rem;
-    overflow: auto;
-  }
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	pre {
+		margin-top: 2rem;
+		display: inline-block;
+		text-align: left;
+		line-height: 2rem;
+		overflow: auto;
+	}
 }
 
 .highlight {
-  margin: 0;
-  padding: 1rem;
-  background-color: $monokai-gray-1;
+	margin: 0;
+	padding: 1rem;
+	background-color: $dark-gray;
 }
 
 .highlight pre {
-  @include container;
-}
-
-.hl.string {
-  color: $monokai-yellow;
+	@include container;
 }
