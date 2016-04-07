@@ -1,19 +1,20 @@
 # Config options
 markdown: kramdown
 sass:
-    style: :compressed
-    sass_dir: _sass
+  style: :compressed
+  sass_dir: _sass
 permalink: /posts/:title/
 gems:
-    - jekyll-redirect-from
+  - jekyll-redirect-from
+  - jekyll-feed
 timezone: America/New_York
 
 # Site-level data
 name: Ben Burwell
 keywords:
-    - ben burwell
-    - software engineer
-    - developer
-    - web applications
+  - ben burwell
+  - software engineer
+  - developer
+  - web applications
 description: "I like to make awesome things with code. Software engineer, student, hacker. Passionate about kerning and coffee."
 excerpt_separator: <!--more-->
