@@ -1,8 +1,19 @@
+- name: "npm package for active911"
+  description: "A JavaScript package that is a wrapper for the Active911 API that I made while developing the MCEMS dispatch console backend."
+  tech: "Node.js, npm"
+  github: "benburwell/active911"
+  live: "https://www.npmjs.com/package/active911"
+
 - name: "BergEMS.org"
   description: "An EMS agency management web application for tracking member records, scheduling shifts, and more."
   tech: "Node.js, Express, MongoDB, Heroku, jQuery"
   github: "benburwell/MCEMS-Site"
   live: "https://www.bergems.org/"
+
+- name: "MCEMS Dispatch console"
+  description: "A React web app enabling pages to be quickly sent via Active911 to on-duty EMTs"
+  tech: "React, Bower, JavaScript"
+  github: "mcems/dispatch"
 
 - name: "actiondoc"
   description: "Actionhero is a great API framework for Node.js that lets you automatically document your API in JSON. Actiondoc takes that one step further and provides a beautiful interface for your API's documentation."
