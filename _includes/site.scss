@@ -5,7 +5,7 @@ $primary-color: #FF6639;
 $link-color: #476AE0;
 
 $base-font-size: 22px;
-$monospace: Consolas, "Liberation Mono", Menlo, Courier, monospace !default;
+$monospace: monospace;
 $container-width: 1200px;
 
 @mixin container {
@@ -127,9 +127,11 @@ blockquote {
 
 a {
 	color: $dark-gray;
-	text-decoration: underline;
+	text-decoration: none;
+  border-bottom: 1px solid $dark-gray;
 	&:hover {
 		color: $primary-color;
+    border-bottom-color: $primary-color;
 	}
 }
 
