@@ -127,8 +127,7 @@ blockquote {
 
 a {
 	color: $dark-gray;
-	text-decoration: none;
-  border-bottom: 1px solid $dark-gray;
+	text-decoration: underline;
 	&:hover {
 		color: $primary-color;
     border-bottom-color: $primary-color;
@@ -193,4 +192,12 @@ aside {
 
 .highlight pre {
 	@include container;
+}
+
+.footer-link::after {
+  content: ' ~ ';
+}
+
+.footer-link:last-of-type::after {
+  content: '';
 }
