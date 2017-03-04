@@ -1,10 +1,12 @@
-$dark-gray: #444;
-$medium-gray: #888;
+$background-color: #091f2e;
+$base-text-color: #33859E;
+$muted-text-color: #245361;
 $light-gray: #ddd;
-$primary-color: #FF6639;
-$link-color: #476AE0;
+$heading-color: #d26937;
+$link-color: #c23127;
+$emphasis-color: #99d1ce;
 
-$base-font-size: 22px;
+$base-font-size: 20px;
 $monospace: monospace;
 $container-width: 1200px;
 
@@ -16,15 +18,16 @@ $container-width: 1200px;
 }
 
 .muted {
-	color: $medium-gray;
+	color: $muted-text-color;
 }
 
 body {
 	font-family: $monospace;
-	color: $dark-gray;
+	color: $base-text-color;
 	font-size: $base-font-size;
 	padding: 5rem 0 0 0;
 	margin: 0;
+  background-color: $background-color;
 }
 
 header {
@@ -36,9 +39,22 @@ header {
 	padding: 0;
 	margin: 0;
 	text-align: center;
-	background-color: rgba(255, 255, 255, 0.9);
+	background-color: $background-color;
 	z-index: 10;
-	border-bottom: 1px solid $light-gray;
+	//border-bottom: 1px solid $light-gray;
+
+  a.nav-up {
+    display: block;
+    color: $base-text-color;
+    padding: 1rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+
+    &:hover,
+    &:focus {
+      color: $link-color;
+    }
+  }
 }
 
 footer {
@@ -51,18 +67,33 @@ section {
 	padding-left: 5rem;
 }
 
-h1 {
+h1,
+h2 {
 	@include container;
-	color: $primary-color;
-	font-size: 2rem;
+	color: $heading-color;
 	font-weight: bold;
+
+  a {
+    color: $heading-color;
+  }
+}
+
+h1 {
+	font-size: 2rem;
+}
+
+h1::before {
+  display: inline;
+  content: '# ';
 }
 
 h2 {
-	@include container;
-	color: $primary-color;
 	font-size: 1.5rem;
-	font-weight: bold;
+}
+
+h2::before {
+  display: inline;
+  content: '## ';
 }
 
 table {
@@ -75,7 +106,8 @@ td {
 
 p {
 	@include container;
-	line-height: 2rem;
+	line-height: 3rem;
+  margin-bottom: 3rem;
 }
 
 ol, ul {
@@ -83,7 +115,7 @@ ol, ul {
 }
 
 li {
-	margin-left: 2rem;
+	margin-left: 4rem;
 	margin-right: 2rem;
 	padding: 1rem;
 }
@@ -95,11 +127,11 @@ pre {
 }
 
 kbd {
-	color: $primary-color;
+	color: $emphasis-color;
 }
 
 code {
-	color: $medium-gray;
+	color: $emphasis-color;
 }
 
 hr {
@@ -126,11 +158,14 @@ blockquote {
 }
 
 a {
-	color: $dark-gray;
+	color: $base-text-color;
 	text-decoration: underline;
-	&:hover {
-		color: $primary-color;
-    border-bottom-color: $primary-color;
+
+	&:hover,
+  &:focus {
+		color: $link-color;
+    border-bottom-color: $link-color;
+    outline: none;
 	}
 }
 
@@ -154,7 +189,7 @@ aside {
 		margin-left: 1rem;
 	}
 	a {
-		color: $medium-gray;
+		color: $muted-text-color;
 	}
 }
 
@@ -186,8 +221,8 @@ aside {
 
 .highlight {
 	margin: 0;
-	padding: 1rem;
-	background-color: $dark-gray;
+	padding: 0 2rem;
+  font-size: 1rem;
 }
 
 .highlight pre {
@@ -200,4 +235,18 @@ aside {
 
 .footer-link:last-of-type::after {
   content: '';
+}
+
+.highlight {
+  .s {
+    color: #2aa889;
+  }
+
+  .nt {
+    color: #edb443;
+  }
+
+  .na {
+    color: $muted-text-color;
+  }
 }
