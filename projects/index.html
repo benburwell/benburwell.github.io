@@ -14,14 +14,12 @@ description: Projects I’ve done.
     {{ project.name }}
   {% endif %}
 </h2>
-<section>
-  <p class="muted">
-    {{ project.tech }}
-    {% if project.github %}
-      &bull;
-      <a class="muted" href="https://github.com/{{ project.github }}">{{ project.github }}</a>
-    {% endif %}
-  </p>
-  <p>{{ project.description }}</p>
-</section>
+<p class="muted">
+  {{ project.tech }}
+  {% if project.github %}
+    &bull;
+    <a class="muted" href="https://github.com/{{ project.github }}">{{ project.github }}</a>
+  {% endif %}
+</p>
+<p>{{ project.description }}</p>
 {% endfor %}
