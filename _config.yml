@@ -22,3 +22,11 @@ excerpt_separator: <!--more-->
 twitter:
   site: "@bburwell"
   creator: "@bburwell"
+
+# Page defaults
+defaults:
+  - scope:
+      path: "" # Applies to all files
+    values:
+      description: "I make things."
+      image: "https://www.benburwell.com/assets/images/icons/benburwell.png"
