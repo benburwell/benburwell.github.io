@@ -1,20 +1,21 @@
-$background-color: #091f2e;
-$base-text-color: #33859E;
-$muted-text-color: #245361;
-$light-gray: #ddd;
-$heading-color: #d26937;
-$link-color: #c23127;
-$emphasis-color: #99d1ce;
+$background-color: #fafafa;
+$base-text-color: #1A364F;
+$muted-text-color: #687876;
+$light-gray: #9CA395;
+$heading-color: #9E1814;
+$link-color: #2A7F89;
 
-$base-font-size: 20px;
+$unit: 9px;
 $monospace: monospace;
-$container-width: 1200px;
+$serif: Palatino, 'Palatino Linotype', 'Palatino LT STD', 'Book Antiqua', 'Georgia', serif;
+
+$container-width: $unit * 100;
+$header-height: $unit * 5;
+$font-size: $unit * 2;
+$date-column-width: 200px;
 
 @mixin container {
 	max-width: $container-width;
-	padding: 0 1rem;
-	margin-left: auto;
-	margin-right: auto;
 }
 
 .muted {
@@ -24,30 +25,19 @@ $container-width: 1200px;
 body {
 	font-family: $monospace;
 	color: $base-text-color;
-	font-size: $base-font-size;
-	padding: 5rem 0 0 0;
+	font-size: $font-size;
+	padding: $font-size;
 	margin: 0;
   background-color: $background-color;
 }
 
 header {
-	position: fixed;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 5rem;
-	padding: 0;
-	margin: 0;
-	text-align: center;
-	background-color: $background-color;
-	z-index: 10;
-	//border-bottom: 1px solid $light-gray;
+  @include container;
+  text-align: center;
 
   a.nav-up {
-    display: block;
     color: $base-text-color;
-    padding: 1rem;
-    font-size: 1.5rem;
+    font-size: 3 * $unit;
     font-weight: bold;
 
     &:hover,
@@ -59,7 +49,7 @@ header {
 
 footer {
 	@extend .muted;
-	padding: 2rem;
+	padding: $unit;
 	text-align: center;
 }
 
@@ -75,21 +65,11 @@ h2 {
 }
 
 h1 {
-	font-size: 2rem;
-}
-
-h1::before {
-  display: inline;
-  content: '# ';
+	font-size: 4 * $unit;
 }
 
 h2 {
-	font-size: 1.5rem;
-}
-
-h2::before {
-  display: inline;
-  content: '## ';
+	font-size: 2 * $unit;
 }
 
 table {
@@ -97,47 +77,50 @@ table {
 }
 
 td {
-	padding: 0.5rem;
+	padding: $unit;
 }
 
 p {
 	@include container;
-	line-height: 3rem;
-  margin-bottom: 3rem;
+	line-height: 1.5;
+  margin-bottom: $unit;
+  font-family: $serif;
 }
 
 ol, ul {
 	@include container;
+  font-family: $serif;
 }
 
 li {
-	margin-left: 4rem;
-	margin-right: 2rem;
-	padding: 1rem;
+	margin-left: 4 * $unit;
+	margin-right: 2 * $unit;
+	padding: $unit;
 }
 
 pre {
 	font-family: $monospace;
 	overflow: auto;
-	margin: 1rem 0;
+	margin: $unit 0;
 }
 
 kbd {
-	color: $emphasis-color;
+  font-family: $monospace;
 }
 
 code {
-	color: $emphasis-color;
+  font-family: $monospace;
 }
 
 hr {
 	border: none;
-	margin-top: $base-font-size;
-	margin-bottom: $base-font-size;
+	margin: $unit 0;
 	text-align: center;
+  width: $container-width;
+
 	&:after {
 		@extend .muted;
-		content: '##';
+		content: '~~~';
 	}
 }
 
@@ -149,7 +132,7 @@ blockquote {
 	font-style: italic;
 	p {
 		box-sizing: border-box;
-		padding: 0 3rem;
+		padding: 0 3 * $unit;
 	}
 }
 
@@ -160,7 +143,6 @@ a {
 	&:hover,
   &:focus {
 		color: $link-color;
-    border-bottom-color: $link-color;
     outline: none;
 	}
 }
@@ -172,17 +154,8 @@ time {
 aside {
 	@extend .muted;
 	@include container;
-	&:before {
-		display: block;
-		content: '/*';
-	}
-	&:after {
-		display: block;
-		white-space: pre;
-		content: ' */';
-	}
 	&>* {
-		margin-left: 1rem;
+		margin-left: 2 * $unit;
 	}
 	a {
 		color: $muted-text-color;
@@ -190,35 +163,31 @@ aside {
 }
 
 .text-center {
+  @include container;
 	text-align: center;
 }
 
-.flex-justify {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
+.post {
+  @include container;
+  margin: 1em;
+  font-family: $serif;
+  clear: both;
 }
 
-.home {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	text-align: center;
-	pre {
-		margin-top: 2rem;
-		display: inline-block;
-		text-align: left;
-		line-height: 2rem;
-		overflow: auto;
-	}
+.post-date {
+  text-align: right;
+  width: $date-column-width;
+  float: left;
+}
+
+.post-title {
+  padding-left: $date-column-width + 2 * $unit;
 }
 
 .highlight {
 	margin: 0;
-	padding: 0 2rem;
-  font-size: 1rem;
+	padding: 0 $unit;
+  font-size: 2 * $unit;
 }
 
 .highlight pre {
@@ -233,16 +202,3 @@ aside {
   content: '';
 }
 
-.highlight {
-  .s {
-    color: #2aa889;
-  }
-
-  .nt {
-    color: #edb443;
-  }
-
-  .na {
-    color: $muted-text-color;
-  }
-}
