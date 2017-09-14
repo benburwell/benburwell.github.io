@@ -4,7 +4,7 @@ sass:
   style: :compressed
   sass_dir: _sass
 permalink: /posts/:title/
-gems:
+plugins:
   - jekyll-redirect-from
   - jekyll-feed
 timezone: America/New_York
