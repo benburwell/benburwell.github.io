@@ -3,44 +3,14 @@
   <head>
     <title>{{ page.title }}</title>
     <meta charset="UTF-8">
-    <style type="text/css">
-        {% capture tiny %}{% include site.scss %}{% endcapture %}
-        {{ tiny | scssify }}
-    </style>
-    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="shortcut icon" href="/assets/images/icons/favicon.ico" sizes="128x128">
-    <link rel="apple-touch-icon" href="/assets/images/icons/apple/apple-touch-icon-57x57.png" sizes="57x57">
-    <link rel="apple-touch-icon" href="/assets/images/icons/apple/apple-touch-icon-72x72.png" sizes="72x72">
-    <link rel="apple-touch-icon" href="/assets/images/icons/apple/apple-touch-icon-76x76.png" sizes="76x76">
-    <link rel="apple-touch-icon" href="/assets/images/icons/apple/apple-touch-icon-114x114.png" sizes="114x114">
-    <link rel="apple-touch-icon" href="/assets/images/icons/apple/apple-touch-icon-120x120.png" sizes="120x120">
-    <link rel="apple-touch-icon" href="/assets/images/icons/apple/apple-touch-icon-144x144.png" sizes="144x144">
-    <link rel="apple-touch-icon" href="/assets/images/icons/apple/apple-touch-icon-152x152.png" sizes="152x152">
     <link rel="alternate" type="application/atom+xml" title="benburwell.com blog posts" href="/feed.xml">
     <meta name="author" content="Ben Burwell">
     <meta name="description" content="{{ page.description }}">
     <meta name="keywords" content="{{ site.keywords | join: ',' }}">
-    <meta property="og:title" content="{{ page.title }}">
-    <meta property="og:site_name" content="Ben Burwell">
-    <meta property="og:description" content="{{ page.description}}">
-    <meta property="og:image" content="{{ page.image }}">
-    <meta property="og:type" content="article">
-    <meta property="og:url" content="http%3A%2F%2Fwww.benburwell.com{{ page.url | cgi_escape }}">
-    <meta property="article:author" content="Ben Burwell">
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:site" content="{{site.twitter.site}}">
-    <meta name="twitter:title" content="{{ page.title }}">
-    <meta name="twitter:creator" content="{{site.twitter.creator}}">
-    <meta property="twitter:description" content="{{ page.description}}">
-    <meta name="twitter:image:src" content="{{ page.image }}">
-    <meta name="twitter:domain" content="BenBurwell.com">
-    {% if page.chrome-webstore-item %}
-    <link rel="chrome-webstore-item" href="https://chrome.google.com/webstore/detail/{{ page.chrome-webstore-item }}">
-    {% endif %}
   </head>
   <body>
     {{ content }}
-    <script src="/assets/scripts/keen.min.js"></script>
-    <script src="/assets/scripts/metrics.js"></script>
   </body>
 </html>

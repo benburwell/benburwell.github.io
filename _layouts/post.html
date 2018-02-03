@@ -1,29 +1,9 @@
 ---
-layout: blog
+layout: master
 ---
 
-<article itemscope itemtype="http://schema.org/BlogPosting">
-  <h1 itemprop="headline">{{ page.title }}</h1>
-  <p><time datetime="{{ post.date | date: '%Y-%m-%d' }}" itemprop="datePublished">{{ page.date | date: "%-d %B %Y" }}</time></p>
+<h1>{{page.title}}</h1>
+<p>{{page.date | date: "%Y-%m-%d"}}</p>
 
-  <div itemprop="articleBody">
-    {{ content }}
-  </div>
-</article>
+{{content}}
 
-<footer>
-  <p>
-    Share on:<br>
-    <a title="Share/Discuss on Hacker News" target="_blank" href="https://news.ycombinator.com/submitlink?u=http%3A%2F%2Fwww.benburwell.com{{ page.url | cgi_escape }}&amp;t={{ page.title }}">Hacker News</a><br>
-    <a title="Share on Twitter" target="_blank" href="https://twitter.com/intent/tweet?text={{ page.title }}&amp;url=http%3A%2F%2Fwww.benburwell.com{{ page.url | cgi_escape }}">Twitter</a><br>
-    <a title="Share on Facebook" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwww.benburwell.com{{ page.url | cgi_escape }}">Facebook</a><br>
-    <a title="Share on Google+" target="_blank" href="https://plus.google.com/share?url=http%3A%2F%2Fwww.benburwell.com{{ page.url | cgi_escape }}&amp;t={{ page.title }}">Google Plus</a>
-  </p>
-
-  <p>
-    Read more:<br>
-    {% for related in site.related_posts limit:3 %}
-    <a href="{{ related.url }}">{{ related.title }}</a><br>
-    {% endfor %}
-  </p>
-</footer>

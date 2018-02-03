@@ -1,19 +1,13 @@
 ---
-layout: blog
+layout: master
 title: Posts - Ben Burwell
 description: Irregularly updated blogish thing about stuff I’m interested in.
-redirect_from: /writing/
 ---
 
 <h1>Posts</h1>
 
+<ul>
 {% for post in site.posts %}
-<div class="post">
-  <div class="post-date">
-    <time datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: "%-d %B %Y" }}</time>
-  </div>
-  <div class="post-title">
-    <a href="{{ post.url }}">{{ post.title }}</a>
-  </div>
-</div>
+  <li>{{post.date | date: "%Y-%m-%d"}} <a href="{{post.url}}">{{post.title}}</a></li>
 {% endfor %}
+</ul>
