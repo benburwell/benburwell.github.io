@@ -6,7 +6,7 @@ layout: master
 
 # Notes on setting up a FreeBSD home server
 
-## Prologue
+## 2018-09-17: Prologue
 
 A few months ago, I purchased a beefy second-hand tower to act as a home server.
 I was looking to bring some of the services that I was previously outsourcing
