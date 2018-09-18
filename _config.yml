@@ -11,22 +11,12 @@ timezone: America/New_York
 
 # Site-level data
 name: Ben Burwell
-keywords:
-  - ben burwell
-  - software engineer
-  - developer
-  - cryptography
-  - lighting design
-description: "I make things."
 excerpt_separator: <!--more-->
-twitter:
-  site: "@bburwell"
-  creator: "@bburwell"
 
-# Page defaults
 defaults:
   - scope:
-      path: "" # Applies to all files
+      path: ""
+      type: "posts"
     values:
-      description: "I make things."
-      image: "https://www.benburwell.com/assets/images/icons/benburwell.png"
+      layout: "post"
+

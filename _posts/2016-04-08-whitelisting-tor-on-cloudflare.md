@@ -1,11 +1,8 @@
 ---
 title: Whitelisting Tor on CloudFlare
 description: >
-  CloudFlare poses an insignificant barrier to Tor users, but site operators can
+  CloudFlare poses a significant barrier to Tor users, but site operators can
   ease their way by whitelisting Tor.
-layout: post
-date: 2016-04-08 00:00:00
-image: https://www.benburwell.com/assets/images/tor.png
 ---
 
 On March 30th, 2016, CloudFlare posted [a blog entry entitled "The Trouble with
