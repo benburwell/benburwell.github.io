@@ -1,6 +1,7 @@
 ---
 title: Notes on setting up a FreeBSD home server
 permalink: /freebsd.html
+layout: master
 ---
 
 # Notes on setting up a FreeBSD home server
