@@ -14,7 +14,8 @@ college, mostly lighting-related.
 ## Things I've Written
 
 I occasionally write about things I'm interested in. You can see some of them
-[here][posts].
+[here][posts]. I'm currently keeping [notes on setting up a FreeBSD
+server][freebsd].
 
 ## Talk to me
 
@@ -27,3 +28,4 @@ PGP server][mit].
 [posts]: /posts/
 [mit]: http://pgp.mit.edu/pks/lookup?op=get&search=0x666112D967A36ECD
 [keybase]: https://keybase.io/benburwell/key.asc
+[freebsd]: /freebsd.html
