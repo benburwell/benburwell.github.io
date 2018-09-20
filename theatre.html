@@ -1,0 +1,27 @@
+---
+layout: master
+title: Theatrical Credits
+permalink: /theatre.html
+redirect_from: /theatre/
+---
+
+<h1>Theatrical Credits</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Show</th>
+      <th>Role</th>
+      <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for show in site.data.shows %}
+    <tr>
+      <td><i>{{ show.name }}</i></td>
+      <td>{{ show.role }}</td>
+      <td>{{ show.date }}</td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>

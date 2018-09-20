@@ -7,7 +7,7 @@ title: Ben Burwell
 
 - [code (github)](https://github.com/benburwell)
 - [words](/posts/)
-- [theatre](/theatre/)
+- [theatre](/theatre.html)
 - [freebsd notes](/freebsd.html)
 - mail: anything you'd like @benburwell.com
 - pgp: `0x666112D967A36ECD` ([keybase][], [mit][])
