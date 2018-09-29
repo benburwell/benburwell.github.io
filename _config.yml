@@ -3,7 +3,6 @@ markdown: kramdown
 sass:
   style: :compressed
   sass_dir: _sass
-permalink: /posts/:title/
 plugins:
   - jekyll-redirect-from
   - jekyll-feed
@@ -12,6 +11,8 @@ timezone: America/New_York
 # Site-level data
 name: Ben Burwell
 excerpt_separator: <!--more-->
+layout: master
+permalink: /:slug.html
 
 defaults:
   - scope:
@@ -19,4 +20,5 @@ defaults:
       type: "posts"
     values:
       layout: "post"
+      permalink: /posts/:title/
 
