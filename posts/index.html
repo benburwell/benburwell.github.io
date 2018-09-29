@@ -3,12 +3,16 @@ title: Posts - Ben Burwell
 description: Irregularly updated blogish thing about stuff I’m interested in.
 ---
 
-<h1>Posts</h1>
+<h1><a href="../">../</a> Blog</h1>
 
-<p>I occasionally write things, and when I do they usually end up here.</p>
+<p>I occasionally write things, and when I do they usually end up here. There's
+also an <a href="/feed.xml">RSS feed</a>.</p>
 
-<ul>
 {% for post in site.posts %}
-  <li>{{post.date | date: "%Y-%m-%d"}} <a href="{{post.url}}">{{post.title}}</a></li>
+<h2>
+  <a href="{{post.url}}">{{post.title}}</a>
+</h2>
+<p>Posted on {{post.date | date: "%Y-%m-%d"}}</p>
+{{post.excerpt}}
 {% endfor %}
-</ul>
+
