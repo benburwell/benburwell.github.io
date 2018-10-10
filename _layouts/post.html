@@ -2,8 +2,14 @@
 layout: master
 ---
 
-<h1><a href="../">../</a> {{page.title}}</h1>
-<p>Posted {{page.date | date: "%Y-%m-%d"}}</p>
+<h1>{{page.title}}</h1>
+<p>
+  <em>
+    Posted {{page.date | date: "%Y-%m-%d"}} to
+    <a href="/">Ben Burwell</a>'s
+    <a href="/posts/">blog</a>
+  </em>
+</p>
 
 {{content}}
 

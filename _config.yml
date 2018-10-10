@@ -11,10 +11,13 @@ timezone: America/New_York
 # Site-level data
 name: Ben Burwell
 excerpt_separator: <!--more-->
-layout: master
 permalink: /:slug.html
 
 defaults:
+  - scope:
+      path: ""
+    values:
+      layout: master
   - scope:
       path: ""
       type: "posts"
