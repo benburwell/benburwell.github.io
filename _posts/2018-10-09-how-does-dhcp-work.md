@@ -93,16 +93,16 @@ in the Offer, including the rebinding and renewal periods, netmask, etc.
 ---
 
 Some observations: it makes sense to see UDP used for this protocol rather than
-DHCP since TCP is connection-oriented and we don't know the address of the
-server (nor our own address for that matter) at the beginning of this process.
-It's also s easy to imagine havoc being wreaked on a network by creating a rogue
-DHCP server that provides fake leases with conflicting IP addresses.
+TCP since TCP is connection-oriented and we don't know the address of the server
+(nor our own address for that matter) at the beginning of this process. It's
+also easy to imagine havoc being wreaked on a network by creating a rogue DHCP
+server that provides fake leases with conflicting IP addresses.
 
 Armed with my basic knowledge of how DHCP functions, I wanted to better
-understand some I had encountered while experimenting. For instance, what is the
-difference between "rebinding" and "renewal"? What is the reason for using
-"seconds elapsed" as a kind of sequence number? My next stop to find answers was
-the IETF RFCs.
+understand some of what I had encountered while experimenting. For instance,
+what is the difference between "rebinding" and "renewal"? What is the reason for
+using "seconds elapsed" as a kind of sequence number? My next stop to find
+answers was the IETF RFCs.
 
 As of this writing, there have been three iterations of the DHCP RFC, along with
 a few other extension/option RFCs. All three were written by Ralph Droms of
@@ -110,9 +110,9 @@ Bucknell University. The first two ([RFC 1531][rfc1531] and [RFC 1541][rfc1541])
 were published in October 1993, and the latest version, [RFC 2131][rfc2131], was
 published in March 1997. For historical context, I wanted to learn what had
 changed throughout the versions, so I ran `$ diff rfc1531.txt rfc1541.txt` (this
-is one of those times that I love having the [RFC repository downloaded locally
-with `rsync`](https://www.rfc-editor.org/retrieve/rsync/). There don't seem to
-be any protocol changes between RFC 1531 and RFC 1541, just a few formatting and
+is one of those times that I love having the [RFC repository available
+locally](https://www.rfc-editor.org/retrieve/rsync/). There don't seem to be any
+protocol changes between RFC 1531 and RFC 1541, just a few formatting and
 phrasing changes. Running `diff` on RFC 1531 and RFC 2131 produced quite a large
 output that I was not eager to read through, but conveniently, section 1.1 of
 RFC 2131 is called "Changes to RFC 1541". The 1997 changes are described as:
@@ -145,16 +145,16 @@ page 15):
 > DHCPDISCOVER message.
 
 I did notice that there are a lot of sections with language like "a DHCP server
-MAY extend a client's lease only if it has local administrative authority to do
-so." But what if someone were to put a rogue DHCP server on the network, one
-that did _not_ have "local administrative authority"? It's probably quite
-possible to wreak a bit of havoc by creating a rogue DHCP server, though perhaps
-not quite as easy as it might seem. Since DHCP leases often last for some time
-(hours or days), existing clients might not be affected by the appearance of a
-new server for quite a while. Besides, due to the binding mechanism, when a
-client needs to renew its lease, it sends a unicast message directly to the
-server it initially obtained the lease from rather than immediately resorting to
-broadcasting a DHCPDISCOVER message.
+MAY extend a client's lease **only if it has local administrative authority** to
+do so" (emphasis added). But what if someone were to put a rogue DHCP server on
+the network, one that did _not_ have "local administrative authority"? It's
+probably quite possible to wreak a bit of havoc by creating a rogue DHCP server,
+though perhaps not quite as easy as it might seem. Since DHCP leases often last
+for some time (hours or days), existing clients might not be affected by the
+appearance of a new server for quite a while. Besides, due to the binding
+mechanism, when a client needs to renew its lease, it sends a unicast message
+directly to the server it initially obtained the lease from rather than
+immediately resorting to broadcasting a DHCPDISCOVER message.
 
 Since DHCP is often employed on a contiguous physical network segment, it may
 not always be possible to use a firewall to block traffic to the server port
