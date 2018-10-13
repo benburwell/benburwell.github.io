@@ -155,3 +155,24 @@ ping: ssend socket: Operation not permitted
 ```
 
 Clearly there's something I've not yet figured out.
+
+## 2018-10-13: Experiment 2: Jail Networking Continued
+
+I decided to take another crack at the jail configuration I started in
+[Experiment 1](#2018-09-20-experiment-1-jails). After reading bits and pieces of
+a few random websites (including various ServerFault posts), on an inkling I
+added the line `interface = "bge0";` to my `/etc/jail.conf` file and ran
+`service jail restart www` (`bge0` is my LAN interface on the host). After
+`jexec`ing in, I tried `pkg install nginx` again and it worked like a charm!
+
+I also noticed that when I run `ifconfig` on my host now, both the original
+10.0.2.201 and the jail's 10.0.2.202 addresses had been added to the `bge0`
+interface. I wondered whether that meant that I could now SSH into the host
+using the jail's IP address. So on my laptop, I ran `ssh bb@10.0.2.202` and lo
+and behold, it worked. The opposite, however, is _not_ true: loading
+http://10.0.2.201 in a web browser does not give me the beautiful "welcome to
+nginx" page that http://10.0.2.202 has.
+
+I'm sure some trickier stuff will arise when dealing with NAT and multiple
+interfaces, but for now I'm satisfied that I have a basic understanding of how
+to set up a service in a jail and expose it to the network.
